@@ -1,5 +1,9 @@
 # From Dataset Generation to Dataset Engineering: What Changed When We Added NEO MCP
 
+<p align="center">
+  <img src="assets/benchmark-infographic.svg" alt="Benchmark overview: 2,000 records across 10 failure categories, severity and difficulty distributions, and the System A vs System B evaluation" width="820">
+</p>
+
 ## Executive Summary
 
 We ran a benchmark to compare two workflows for generating a 1,000-record synthetic dataset of AI agent failures: Claude Code alone, and Claude Code augmented with NEO MCP. Both workflows produced datasets that met the same contractual requirements—10 failure categories, balanced severity and difficulty distributions, 15-field JSONL schema, and full audit coverage.
