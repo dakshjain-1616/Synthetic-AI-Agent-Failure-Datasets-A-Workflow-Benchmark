@@ -1,5 +1,10 @@
 # Synthetic AI Agent Failure Datasets — A Workflow Benchmark
 
+[![NEO for VS Code](https://img.shields.io/badge/VS%20Code-Get%20NEO-007ACC?logo=visualstudiocode&logoColor=white)](https://marketplace.visualstudio.com/items?itemName=NeoResearchInc.heyneo)
+[![NEO for Cursor](https://img.shields.io/badge/Cursor-Get%20NEO-000000?logo=cursor&logoColor=white)](https://marketplace.cursorapi.com/items/?itemName=NeoResearchInc.heyneo)
+[![NEO MCP Docs](https://img.shields.io/badge/docs-NEO%20MCP-2ea44f?logo=readthedocs&logoColor=white)](https://docs.heyneo.com/neo-mcp)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
 Two independently generated **1,000-record synthetic datasets of realistic AI agent
 failures**, plus the full analysis comparing the two workflows that produced them:
 
@@ -52,6 +57,19 @@ diversity numbers are not directly comparable):
 **The takeaway:** System A optimized for *authorial diversity* (prose richness, tool-name
 variety); System B optimized for *engineering rigor* (reproducibility, a generation-time
 near-duplicate guard, a structured audit pipeline). Neither is an unqualified winner.
+
+---
+
+## Powered by NEO MCP
+
+System B was generated with **NEO MCP**, which adds a deterministic, guard-railed
+generation-and-audit layer on top of your AI coding assistant. Get it for your editor:
+
+| | Install | |
+|---|---|---|
+| **VS Code** | [![NEO for VS Code](https://img.shields.io/badge/Marketplace-Install%20NEO-007ACC?logo=visualstudiocode&logoColor=white)](https://marketplace.visualstudio.com/items?itemName=NeoResearchInc.heyneo) | [marketplace.visualstudio.com](https://marketplace.visualstudio.com/items?itemName=NeoResearchInc.heyneo) |
+| **Cursor** | [![NEO for Cursor](https://img.shields.io/badge/Marketplace-Install%20NEO-000000?logo=cursor&logoColor=white)](https://marketplace.cursorapi.com/items/?itemName=NeoResearchInc.heyneo) | [marketplace.cursorapi.com](https://marketplace.cursorapi.com/items/?itemName=NeoResearchInc.heyneo) |
+| **Docs** | [![NEO MCP Docs](https://img.shields.io/badge/Read-NEO%20MCP%20Docs-2ea44f?logo=readthedocs&logoColor=white)](https://docs.heyneo.com/neo-mcp) | [docs.heyneo.com/neo-mcp](https://docs.heyneo.com/neo-mcp) |
 
 ---
 
@@ -133,7 +151,8 @@ python3 gen_reports.py                                   # -> coverage/audit/sum
 
 Same seed → byte-for-byte identical output. The generator enforces diversity *at
 generation time*: every candidate is screened against all accepted records (cosine
-< 0.50 over the same text the audit scores) before being kept.
+< 0.50 over the same text the audit scores) before being kept. For setting up NEO MCP
+itself, see the [NEO MCP docs](https://docs.heyneo.com/neo-mcp).
 
 ### System A (`claudecode/`) — LLM-authored
 
