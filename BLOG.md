@@ -11,6 +11,40 @@ We ran a benchmark to compare two workflows for generating a 1,000-record synthe
 The benchmark revealed a distinction that matters for anyone scaling synthetic data work: **dataset generation quality** and **dataset engineering quality** are different problems. Claude Code optimized for generation quality—prose richness, lexical diversity, and tool-name variety. NEO MCP optimized for engineering quality—reproducibility, validation, auditability, and traceability. **NEO MCP improved workflow quality rather than dataset diversity.** The result is not a better dataset in every dimension, but a more governable, maintainable, and auditable generation pipeline.
 
 ---
+## Before vs. After
+
+**Before NEO MCP:** the Claude Code baseline split generation across 40 parallel subagents, deduplicated after the fact, and produced prose audit reports that needed a human to read before catching problems. Nothing about it was reproducible: a second run wouldn't produce the same dataset. Shipping required a manual patch loop, 7 records hand-corrected before publish.
+
+**After NEO MCP:** a 3-script pipeline (`generate_dataset.py`, `audit_pipeline.py`, `gen_reports.py`) runs from a fixed seed, rejects near-duplicate candidates during generation instead of after, and outputs a machine-readable `final_audit.json` with 9 scored components and pass/fail flags. Same seed, same dataset, same metrics, every time.
+
+### What Changed Under The Hood
+
+- **Validation moved earlier.** A streaming `HashingVectorizer` rejected near-duplicate candidates as they were generated (cosine similarity above 0.50), not in a cleanup pass afterward. Roughly 44,000 candidates were rejected to land the 1,000 accepted records, for a 1.60% near-duplicate rate at the stricter 0.85 audit threshold, with zero post-hoc fixes required.
+- **Audits became data.** `final_audit.json` scores 9 components (schema, exact/near-duplicate, category/severity/difficulty balance, tool/root-cause/recovery diversity) into one composite score, 98.4 out of 100, plus entropy metrics for root-cause and recovery-step phrasing.
+- **Determinism.** Fixed seed, default 42. Rerun it and you get the same dataset and the same metrics, byte-for-byte.
+- **Fewer moving parts.** 3 scripts replace 40 subagent dispatches, an orchestrator, and a separate report-building step.
+
+```mermaid
+flowchart LR
+    A[Claude Code] --> B[NEO MCP]
+    B --> C[generate_dataset.py]
+    C -.->|reject near-duplicates| C
+    C --> D[1,000 records]
+    D --> E[audit_pipeline.py]
+    E --> F[final_audit.json]
+    F --> G[gen_reports.py]
+```
+*NEO MCP is the agent's local execution layer: it's what lets Claude Code run and rerun the scripts deterministically instead of re-authoring records from scratch each time.*
+
+### Why This Matters Beyond This Benchmark
+
+This isn't really about one dataset. It's about whether a synthetic data pipeline is a one-off script or a maintained asset.
+
+- **Versioning.** A deterministic seed means you can pin a dataset version and regenerate it exactly when someone asks how it was built.
+- **CI gating.** `final_audit.json`'s component scores and pass/fail flags can fail a build automatically, instead of someone eyeballing a markdown report before merging a dataset update.
+- **Onboarding.** 3 scripts a new engineer can read in an afternoon, instead of reconstructing the logic of 40 subagent prompts and an orchestrator's merge step.
+
+Worth saying plainly: this comes at a real cost. Tool vocabulary drops from 1,133 unique names to 110, and the generation itself is template-based rather than freely authored. You're not getting a better dataset on every axis. You're getting one you can rerun, gate, and explain to a new teammate without a debrief.
 
 ## The Problem
 
@@ -202,6 +236,19 @@ These lessons apply whether or not a team uses NEO MCP.
 **When a hybrid approach is appropriate:** The benchmark did not test a hybrid, but the artifact evidence points to one. A rich domain vocabulary and a diverse set of failure templates could be paired with NEO MCP's deterministic seed, generation-time guard, and audit scaffolding. The result would preserve NEO MCP's engineering guarantees while expanding the expressive range that Claude Code demonstrated was achievable. The main engineering challenge would be maintaining both the template diversity and the deterministic contract across updates to the template library.
 
 ---
+## Workflow ROI At A Glance
+
+| What | Before (Claude Code alone) | After (+ NEO MCP) |
+|---|---|---|
+| Reproducible from scratch | No | Yes, byte-for-byte (seed 42) |
+| When duplicates get caught | After generation | During generation (~44,000 candidates rejected) |
+| Near-duplicate rate | 0.00% at Jaccard ≥ 0.50 | 1.60% at TF-IDF cosine ≥ 0.85 |
+| Audit format | Prose + per-batch JSON | One JSON file, 9 scored components, composite 98.4/100 |
+| Pipeline to maintain | 40 subagent prompts + orchestrator | 3 scripts |
+| Manual fixes needed before publish | 7 records patched | 0 |
+
+The honest read: this isn't a strictly better dataset. It's a strictly more governable pipeline. Tool vocabulary narrows from 1,133 unique names to 110 in the trade. Pick based on which one your use case actually needs.
+-- 
 
 ## Conclusion
 
