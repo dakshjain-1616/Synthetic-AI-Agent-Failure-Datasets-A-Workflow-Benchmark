@@ -1,0 +1,111 @@
+{
+  "total": 100,
+  "by_category": {
+    "Incomplete Workflow": 100
+  },
+  "by_severity": {
+    "Low": 20,
+    "Medium": 50,
+    "High": 25,
+    "Critical": 5
+  },
+  "by_difficulty": {
+    "Easy": 30,
+    "Medium": 50,
+    "Hard": 20
+  },
+  "severity_pct": {
+    "Low": 20.0,
+    "Medium": 50.0,
+    "High": 25.0,
+    "Critical": 5.0
+  },
+  "difficulty_pct": {
+    "Easy": 30.0,
+    "Medium": 50.0,
+    "Hard": 20.0
+  },
+  "unique_failure_types": 100,
+  "unique_tools": 252,
+  "top_tools": [
+    [
+      "str_replace_editor",
+      18
+    ],
+    [
+      "git commit",
+      14
+    ],
+    [
+      "curl",
+      11
+    ],
+    [
+      "bigquery.jobs.query",
+      7
+    ],
+    [
+      "psql",
+      7
+    ],
+    [
+      "git",
+      5
+    ],
+    [
+      "slack.chat.postMessage",
+      5
+    ],
+    [
+      "alembic upgrade",
+      5
+    ],
+    [
+      "calendar.events.patch",
+      4
+    ],
+    [
+      "fastlane",
+      4
+    ],
+    [
+      "bigquery.tables.get",
+      4
+    ],
+    [
+      "ripgrep",
+      4
+    ],
+    [
+      "web_search",
+      4
+    ],
+    [
+      "fs.edit_file",
+      4
+    ],
+    [
+      "gmail.messages.send",
+      4
+    ]
+  ],
+  "unique_root_cause_prefixes": 100,
+  "unique_user_requests": 100,
+  "unique_recovery_steps": 500,
+  "avg_recovery_steps": 5.0,
+  "most_repeated_recovery_step": [
+    [
+      "list the created event with get_event and observe attendees is empty",
+      1
+    ],
+    [
+      "patch the event adding the backend squad attendee emails",
+      1
+    ],
+    [
+      "set sendupdates all so invitations are sent",
+      1
+    ]
+  ],
+  "unique_eval_criteria": 300
+}

@@ -1,0 +1,111 @@
+{
+  "total": 100,
+  "by_category": {
+    "Multi-Step Execution Failure": 100
+  },
+  "by_severity": {
+    "High": 25,
+    "Medium": 50,
+    "Low": 20,
+    "Critical": 5
+  },
+  "by_difficulty": {
+    "Easy": 30,
+    "Medium": 50,
+    "Hard": 20
+  },
+  "severity_pct": {
+    "High": 25.0,
+    "Medium": 50.0,
+    "Low": 20.0,
+    "Critical": 5.0
+  },
+  "difficulty_pct": {
+    "Easy": 30.0,
+    "Medium": 50.0,
+    "Hard": 20.0
+  },
+  "unique_failure_types": 100,
+  "unique_tools": 234,
+  "top_tools": [
+    [
+      "psql",
+      8
+    ],
+    [
+      "curl",
+      8
+    ],
+    [
+      "embeddings.create",
+      5
+    ],
+    [
+      "mcp__Google_Calendar__get_event",
+      5
+    ],
+    [
+      "SELECT count(*)",
+      4
+    ],
+    [
+      "bq query",
+      4
+    ],
+    [
+      "kubectl rollout status",
+      4
+    ],
+    [
+      "kubectl apply",
+      4
+    ],
+    [
+      "browser.fetch",
+      4
+    ],
+    [
+      "browser.extract_text",
+      4
+    ],
+    [
+      "mcp__Google_Calendar__create_event",
+      4
+    ],
+    [
+      "snowflake.query",
+      4
+    ],
+    [
+      "kubectl rollout restart",
+      3
+    ],
+    [
+      "pg_restore",
+      3
+    ],
+    [
+      "requests",
+      3
+    ]
+  ],
+  "unique_root_cause_prefixes": 100,
+  "unique_user_requests": 100,
+  "unique_recovery_steps": 499,
+  "avg_recovery_steps": 5.0,
+  "most_repeated_recovery_step": [
+    [
+      "fix the failing tests",
+      2
+    ],
+    [
+      "detect crash loop via failing readiness probes",
+      1
+    ],
+    [
+      "roll back the deployment with kubectl rollout undo deployment orders api",
+      1
+    ]
+  ],
+  "unique_eval_criteria": 300
+}

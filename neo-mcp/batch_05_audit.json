@@ -1,0 +1,243 @@
+{
+  "file": "batch_05.jsonl",
+  "total_examples": 100,
+  "parse_errors": [],
+  "schema_validation": {
+    "total": 100,
+    "passed": 100,
+    "failed": 0,
+    "issues": [],
+    "field_completeness": {
+      "total_fields": 15,
+      "fields_with_empty": {}
+    }
+  },
+  "exact_duplicates": {
+    "total_exact_duplicates": 0,
+    "exact_duplicate_rate": 0.0,
+    "duplicate_pairs": []
+  },
+  "near_duplicates": {
+    "total_near_duplicates": 0,
+    "near_duplicate_rate": 0.0,
+    "threshold_used": 0.85,
+    "pairs": []
+  },
+  "category_balance": {
+    "counts": {
+      "Context Loss": 18,
+      "Hallucinated Information": 12,
+      "Missing Parameters": 12,
+      "Multi-Step Execution Failure": 12,
+      "Incorrect Planning": 11,
+      "Insufficient Research": 9,
+      "Recovery Failure": 8,
+      "Incorrect Parameters": 7,
+      "Wrong Tool Selection": 6,
+      "Incomplete Workflow": 5
+    },
+    "expected_per_category": 10.0,
+    "deviations": {
+      "Context Loss": {
+        "count": 18,
+        "expected": 10.0,
+        "deviation": 8.0,
+        "deviation_pct": 80.0
+      },
+      "Hallucinated Information": {
+        "count": 12,
+        "expected": 10.0,
+        "deviation": 2.0,
+        "deviation_pct": 20.0
+      },
+      "Incomplete Workflow": {
+        "count": 5,
+        "expected": 10.0,
+        "deviation": -5.0,
+        "deviation_pct": -50.0
+      },
+      "Incorrect Parameters": {
+        "count": 7,
+        "expected": 10.0,
+        "deviation": -3.0,
+        "deviation_pct": -30.0
+      },
+      "Incorrect Planning": {
+        "count": 11,
+        "expected": 10.0,
+        "deviation": 1.0,
+        "deviation_pct": 10.0
+      },
+      "Insufficient Research": {
+        "count": 9,
+        "expected": 10.0,
+        "deviation": -1.0,
+        "deviation_pct": -10.0
+      },
+      "Missing Parameters": {
+        "count": 12,
+        "expected": 10.0,
+        "deviation": 2.0,
+        "deviation_pct": 20.0
+      },
+      "Multi-Step Execution Failure": {
+        "count": 12,
+        "expected": 10.0,
+        "deviation": 2.0,
+        "deviation_pct": 20.0
+      },
+      "Recovery Failure": {
+        "count": 8,
+        "expected": 10.0,
+        "deviation": -2.0,
+        "deviation_pct": -20.0
+      },
+      "Wrong Tool Selection": {
+        "count": 6,
+        "expected": 10.0,
+        "deviation": -4.0,
+        "deviation_pct": -40.0
+      }
+    },
+    "max_deviation": 8.0,
+    "min_category": "Incomplete Workflow",
+    "max_category": "Context Loss"
+  },
+  "severity_distribution": {
+    "counts": {
+      "low": 16,
+      "medium": 56,
+      "high": 23,
+      "critical": 5
+    },
+    "target_pcts": {
+      "low": 20.0,
+      "medium": 50.0,
+      "high": 25.0,
+      "critical": 5.0
+    },
+    "actual_pcts": {
+      "low": 16.0,
+      "medium": 56.0,
+      "high": 23.0,
+      "critical": 5.0
+    },
+    "deviations": {
+      "low": -4.0,
+      "medium": 6.0,
+      "high": -2.0,
+      "critical": 0.0
+    },
+    "chi_square_stat": 1.68,
+    "within_tolerance": false
+  },
+  "difficulty_distribution": {
+    "counts": {
+      "easy": 27,
+      "medium": 52,
+      "hard": 21
+    },
+    "target_pcts": {
+      "easy": 30.0,
+      "medium": 50.0,
+      "hard": 20.0
+    },
+    "actual_pcts": {
+      "easy": 27.0,
+      "medium": 52.0,
+      "hard": 21.0
+    },
+    "deviations": {
+      "easy": -3.0,
+      "medium": 2.0,
+      "hard": 1.0
+    },
+    "chi_square_stat": 0.43,
+    "within_tolerance": true
+  },
+  "recovery_plan_diversity": {
+    "unique_first_step_patterns": 28,
+    "first_step_pattern_entropy": 3.846,
+    "avg_steps_per_plan": 4.77,
+    "total_unique_recovery_texts": 100,
+    "top_first_step_patterns": {
+      "Reconstruct the full task": 18,
+      "Flag the unverified claim": 12,
+      "Detect the missing-argument symptom:": 12,
+      "Trace the chain to": 12,
+      "Reconstruct the dependency graph": 11,
+      "Stop the failing recovery": 8,
+      "Compare the current state": 5,
+      "Pause acting on create": 2,
+      "Detect that sentiment_classify produced": 1,
+      "Identify that macro_apply ran": 1,
+      "Pause acting on implement": 1,
+      "Identify that access_review ran": 1,
+      "Pause acting on validate": 1,
+      "Identify that evaluate_model ran": 1,
+      "Detect that refund_issue produced": 1
+    }
+  },
+  "tool_diversity": {
+    "unique_tools": 110,
+    "total_tool_occurrences": 353,
+    "avg_tools_per_example": 3.53,
+    "top_tools": {
+      "terraform_apply": 8,
+      "build_project": 7,
+      "ledger_query": 6,
+      "refund_issue": 6,
+      "oauth_refresh": 6,
+      "slack_post": 6,
+      "open_url": 5,
+      "translate": 5,
+      "schema_diff": 5,
+      "wikipedia_lookup": 5,
+      "git_commit": 5,
+      "docker_build": 5,
+      "checkpoint_save": 5,
+      "pdf_extract": 5,
+      "log_search": 5,
+      "sql_query": 5,
+      "access_review": 5,
+      "dependency_audit": 5,
+      "email_send": 5,
+      "tax_calculate": 4
+    }
+  },
+  "root_cause_diversity": {
+    "unique_root_cause_patterns": 50,
+    "root_cause_entropy": 5.2468,
+    "repeated_patterns": 22,
+    "top_root_cause_patterns": {
+      "Flawed plan structure: the ordering/strategy was": 11,
+      "Tool selected by surface-level name matching": 6,
+      "State/context loss: the agent forgot the": 6,
+      "Workflow terminated early: the agent treated": 5,
+      "Unverified intermediate result: the agent did": 4,
+      "State/context loss: the agent ignored an": 4,
+      "Fabricated content: the agent fabricated a": 3,
+      "Unverified intermediate result: an intermediate call": 3,
+      "Insufficient context gathering: the agent did": 3,
+      "Unverified intermediate result: a partial write": 3,
+      "Fabricated content: the agent reported a": 2,
+      "State/context loss: the agent dropped the": 2,
+      "Fabricated content: the agent cited a": 2,
+      "State/context loss: the agent re-applied a": 2,
+      "State/context loss: the agent lost track": 2
+    }
+  },
+  "quality_score": {
+    "schema_score": 100.0,
+    "exact_dup_score": 100.0,
+    "near_dup_score": 100.0,
+    "category_balance_score": 40.0,
+    "severity_score": 85.0,
+    "difficulty_score": 90.0,
+    "tool_diversity_score": 100,
+    "root_cause_diversity_score": 100,
+    "recovery_diversity_score": 76.9,
+    "diversity_score": 92.3,
+    "composite_quality_score": 87.0
+  }
+}

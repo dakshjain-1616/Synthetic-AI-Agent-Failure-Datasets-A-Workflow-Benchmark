@@ -1,0 +1,111 @@
+{
+  "total": 100,
+  "by_category": {
+    "Wrong Tool Selection": 100
+  },
+  "by_severity": {
+    "Low": 20,
+    "High": 25,
+    "Medium": 50,
+    "Critical": 5
+  },
+  "by_difficulty": {
+    "Easy": 30,
+    "Medium": 50,
+    "Hard": 20
+  },
+  "severity_pct": {
+    "Low": 20.0,
+    "High": 25.0,
+    "Medium": 50.0,
+    "Critical": 5.0
+  },
+  "difficulty_pct": {
+    "Easy": 30.0,
+    "Medium": 50.0,
+    "Hard": 20.0
+  },
+  "unique_failure_types": 100,
+  "unique_tools": 230,
+  "top_tools": [
+    [
+      "web_search",
+      5
+    ],
+    [
+      "web.read_page",
+      5
+    ],
+    [
+      "browser.open",
+      4
+    ],
+    [
+      "mcp__google_calendar__list_events",
+      4
+    ],
+    [
+      "ripgrep",
+      3
+    ],
+    [
+      "psql",
+      3
+    ],
+    [
+      "kubectl",
+      3
+    ],
+    [
+      "curl",
+      3
+    ],
+    [
+      "gdrive.files.get",
+      3
+    ],
+    [
+      "gmail.messages.list",
+      3
+    ],
+    [
+      "mcp__github__list_workflow_runs",
+      2
+    ],
+    [
+      "terraform plan",
+      2
+    ],
+    [
+      "terraform state list",
+      2
+    ],
+    [
+      "pg_stat_activity",
+      2
+    ],
+    [
+      "bigquery.jobs.query",
+      2
+    ]
+  ],
+  "unique_root_cause_prefixes": 100,
+  "unique_user_requests": 100,
+  "unique_recovery_steps": 489,
+  "avg_recovery_steps": 4.89,
+  "most_repeated_recovery_step": [
+    [
+      "notice the cited file does not contain the literal symbol",
+      1
+    ],
+    [
+      "run ripgrep n ratelimitmw",
+      1
+    ],
+    [
+      "confirm the registration call site in routes go",
+      1
+    ]
+  ],
+  "unique_eval_criteria": 281
+}

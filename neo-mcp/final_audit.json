@@ -1,0 +1,324 @@
+{
+  "file": "agent_failure_dataset.jsonl",
+  "total_examples": 1000,
+  "parse_errors": [],
+  "schema_validation": {
+    "total": 1000,
+    "passed": 1000,
+    "failed": 0,
+    "issues": [],
+    "field_completeness": {
+      "total_fields": 15,
+      "fields_with_empty": {}
+    }
+  },
+  "exact_duplicates": {
+    "total_exact_duplicates": 0,
+    "exact_duplicate_rate": 0.0,
+    "duplicate_pairs": []
+  },
+  "near_duplicates": {
+    "total_near_duplicates": 16,
+    "near_duplicate_rate": 0.016,
+    "threshold_used": 0.85,
+    "pairs": [
+      {
+        "id_1": "agent-failure-0253",
+        "id_2": "agent-failure-0746",
+        "similarity": 1.0
+      },
+      {
+        "id_1": "agent-failure-0738",
+        "id_2": "agent-failure-0995",
+        "similarity": 0.9612
+      },
+      {
+        "id_1": "agent-failure-0060",
+        "id_2": "agent-failure-0765",
+        "similarity": 0.9476
+      },
+      {
+        "id_1": "agent-failure-0021",
+        "id_2": "agent-failure-0985",
+        "similarity": 0.9397
+      },
+      {
+        "id_1": "agent-failure-0623",
+        "id_2": "agent-failure-0895",
+        "similarity": 0.9369
+      },
+      {
+        "id_1": "agent-failure-0754",
+        "id_2": "agent-failure-0927",
+        "similarity": 0.915
+      },
+      {
+        "id_1": "agent-failure-0083",
+        "id_2": "agent-failure-0680",
+        "similarity": 0.9108
+      },
+      {
+        "id_1": "agent-failure-0700",
+        "id_2": "agent-failure-0728",
+        "similarity": 0.9022
+      },
+      {
+        "id_1": "agent-failure-0166",
+        "id_2": "agent-failure-0742",
+        "similarity": 0.8914
+      },
+      {
+        "id_1": "agent-failure-0034",
+        "id_2": "agent-failure-0649",
+        "similarity": 0.8804
+      },
+      {
+        "id_1": "agent-failure-0623",
+        "id_2": "agent-failure-0785",
+        "similarity": 0.8778
+      },
+      {
+        "id_1": "agent-failure-0140",
+        "id_2": "agent-failure-0772",
+        "similarity": 0.8746
+      },
+      {
+        "id_1": "agent-failure-0643",
+        "id_2": "agent-failure-0870",
+        "similarity": 0.8537
+      },
+      {
+        "id_1": "agent-failure-0380",
+        "id_2": "agent-failure-0557",
+        "similarity": 0.8534
+      },
+      {
+        "id_1": "agent-failure-0652",
+        "id_2": "agent-failure-0754",
+        "similarity": 0.8513
+      },
+      {
+        "id_1": "agent-failure-0577",
+        "id_2": "agent-failure-0623",
+        "similarity": 0.8503
+      }
+    ]
+  },
+  "category_balance": {
+    "counts": {
+      "Incomplete Workflow": 100,
+      "Hallucinated Information": 100,
+      "Missing Parameters": 100,
+      "Recovery Failure": 100,
+      "Wrong Tool Selection": 100,
+      "Multi-Step Execution Failure": 100,
+      "Context Loss": 100,
+      "Insufficient Research": 100,
+      "Incorrect Parameters": 100,
+      "Incorrect Planning": 100
+    },
+    "expected_per_category": 100.0,
+    "deviations": {
+      "Context Loss": {
+        "count": 100,
+        "expected": 100.0,
+        "deviation": 0.0,
+        "deviation_pct": 0.0
+      },
+      "Hallucinated Information": {
+        "count": 100,
+        "expected": 100.0,
+        "deviation": 0.0,
+        "deviation_pct": 0.0
+      },
+      "Incomplete Workflow": {
+        "count": 100,
+        "expected": 100.0,
+        "deviation": 0.0,
+        "deviation_pct": 0.0
+      },
+      "Incorrect Parameters": {
+        "count": 100,
+        "expected": 100.0,
+        "deviation": 0.0,
+        "deviation_pct": 0.0
+      },
+      "Incorrect Planning": {
+        "count": 100,
+        "expected": 100.0,
+        "deviation": 0.0,
+        "deviation_pct": 0.0
+      },
+      "Insufficient Research": {
+        "count": 100,
+        "expected": 100.0,
+        "deviation": 0.0,
+        "deviation_pct": 0.0
+      },
+      "Missing Parameters": {
+        "count": 100,
+        "expected": 100.0,
+        "deviation": 0.0,
+        "deviation_pct": 0.0
+      },
+      "Multi-Step Execution Failure": {
+        "count": 100,
+        "expected": 100.0,
+        "deviation": 0.0,
+        "deviation_pct": 0.0
+      },
+      "Recovery Failure": {
+        "count": 100,
+        "expected": 100.0,
+        "deviation": 0.0,
+        "deviation_pct": 0.0
+      },
+      "Wrong Tool Selection": {
+        "count": 100,
+        "expected": 100.0,
+        "deviation": 0.0,
+        "deviation_pct": 0.0
+      }
+    },
+    "max_deviation": 0,
+    "min_category": "Incomplete Workflow",
+    "max_category": null
+  },
+  "severity_distribution": {
+    "counts": {
+      "low": 200,
+      "medium": 500,
+      "high": 250,
+      "critical": 50
+    },
+    "target_pcts": {
+      "low": 20.0,
+      "medium": 50.0,
+      "high": 25.0,
+      "critical": 5.0
+    },
+    "actual_pcts": {
+      "low": 20.0,
+      "medium": 50.0,
+      "high": 25.0,
+      "critical": 5.0
+    },
+    "deviations": {
+      "low": 0.0,
+      "medium": 0.0,
+      "high": 0.0,
+      "critical": 0.0
+    },
+    "chi_square_stat": 0.0,
+    "within_tolerance": true
+  },
+  "difficulty_distribution": {
+    "counts": {
+      "easy": 300,
+      "medium": 500,
+      "hard": 200
+    },
+    "target_pcts": {
+      "easy": 30.0,
+      "medium": 50.0,
+      "hard": 20.0
+    },
+    "actual_pcts": {
+      "easy": 30.0,
+      "medium": 50.0,
+      "hard": 20.0
+    },
+    "deviations": {
+      "easy": 0.0,
+      "medium": 0.0,
+      "hard": 0.0
+    },
+    "chi_square_stat": 0.0,
+    "within_tolerance": true
+  },
+  "recovery_plan_diversity": {
+    "unique_first_step_patterns": 199,
+    "first_step_pattern_entropy": 5.071,
+    "avg_steps_per_plan": 4.81,
+    "total_unique_recovery_texts": 960,
+    "top_first_step_patterns": {
+      "Compare the current state": 100,
+      "Flag the unverified claim": 100,
+      "Detect the missing-argument symptom:": 100,
+      "Stop the failing recovery": 100,
+      "Trace the chain to": 100,
+      "Reconstruct the full task": 100,
+      "Reconstruct the dependency graph": 100,
+      "Pause acting on convert": 4,
+      "Detect that sql_query produced": 4,
+      "Identify that airflow_trigger ran": 4,
+      "Pause acting on archive": 4,
+      "Pause acting on rotate": 4,
+      "Pause acting on create": 4,
+      "Detect that fx_convert produced": 4,
+      "Detect that github_create_issue produced": 4
+    }
+  },
+  "tool_diversity": {
+    "unique_tools": 110,
+    "total_tool_occurrences": 3518,
+    "avg_tools_per_example": 3.52,
+    "top_tools": {
+      "terraform_apply": 59,
+      "sql_query": 53,
+      "aws_cli": 47,
+      "pdf_extract": 45,
+      "cve_lookup": 43,
+      "tax_calculate": 42,
+      "dependency_audit": 42,
+      "access_review": 42,
+      "knowledge_base_query": 41,
+      "schema_diff": 39,
+      "ssh_exec": 39,
+      "translate": 39,
+      "signature_verify": 39,
+      "build_project": 39,
+      "key_rotate": 38,
+      "reconcile": 37,
+      "web_search": 37,
+      "csv_export": 37,
+      "approval_route": 37,
+      "web_fetch": 37
+    }
+  },
+  "root_cause_diversity": {
+    "unique_root_cause_patterns": 194,
+    "root_cause_entropy": 6.0618,
+    "repeated_patterns": 116,
+    "top_root_cause_patterns": {
+      "Workflow terminated early: the agent treated": 100,
+      "Tool selected by surface-level name matching": 100,
+      "Flawed plan structure: the ordering/strategy was": 100,
+      "Insufficient context gathering: the agent did": 32,
+      "Unverified intermediate result: an intermediate call": 23,
+      "Unverified intermediate result: a partial write": 22,
+      "Insufficient context gathering: the agent ignored": 21,
+      "Unverified intermediate result: the agent did": 20,
+      "State/context loss: the agent forgot the": 20,
+      "State/context loss: the agent ignored an": 18,
+      "State/context loss: the agent re-applied a": 17,
+      "Fabricated content: the agent referenced an": 17,
+      "Insufficient context gathering: the agent assumed": 15,
+      "Fabricated content: the agent invented a": 15,
+      "Fabricated content: the agent fabricated a": 14
+    }
+  },
+  "quality_score": {
+    "schema_score": 100.0,
+    "exact_dup_score": 100.0,
+    "near_dup_score": 84.0,
+    "category_balance_score": 100.0,
+    "severity_score": 100.0,
+    "difficulty_score": 100.0,
+    "tool_diversity_score": 100,
+    "root_cause_diversity_score": 100,
+    "recovery_diversity_score": 100,
+    "diversity_score": 100.0,
+    "composite_quality_score": 98.4
+  }
+}

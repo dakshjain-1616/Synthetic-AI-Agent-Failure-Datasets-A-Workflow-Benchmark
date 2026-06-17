@@ -1,0 +1,243 @@
+{
+  "file": "batch_10.jsonl",
+  "total_examples": 100,
+  "parse_errors": [],
+  "schema_validation": {
+    "total": 100,
+    "passed": 100,
+    "failed": 0,
+    "issues": [],
+    "field_completeness": {
+      "total_fields": 15,
+      "fields_with_empty": {}
+    }
+  },
+  "exact_duplicates": {
+    "total_exact_duplicates": 0,
+    "exact_duplicate_rate": 0.0,
+    "duplicate_pairs": []
+  },
+  "near_duplicates": {
+    "total_near_duplicates": 0,
+    "near_duplicate_rate": 0.0,
+    "threshold_used": 0.85,
+    "pairs": []
+  },
+  "category_balance": {
+    "counts": {
+      "Hallucinated Information": 14,
+      "Insufficient Research": 13,
+      "Wrong Tool Selection": 12,
+      "Incomplete Workflow": 11,
+      "Context Loss": 10,
+      "Missing Parameters": 9,
+      "Multi-Step Execution Failure": 8,
+      "Incorrect Parameters": 8,
+      "Recovery Failure": 8,
+      "Incorrect Planning": 7
+    },
+    "expected_per_category": 10.0,
+    "deviations": {
+      "Context Loss": {
+        "count": 10,
+        "expected": 10.0,
+        "deviation": 0.0,
+        "deviation_pct": 0.0
+      },
+      "Hallucinated Information": {
+        "count": 14,
+        "expected": 10.0,
+        "deviation": 4.0,
+        "deviation_pct": 40.0
+      },
+      "Incomplete Workflow": {
+        "count": 11,
+        "expected": 10.0,
+        "deviation": 1.0,
+        "deviation_pct": 10.0
+      },
+      "Incorrect Parameters": {
+        "count": 8,
+        "expected": 10.0,
+        "deviation": -2.0,
+        "deviation_pct": -20.0
+      },
+      "Incorrect Planning": {
+        "count": 7,
+        "expected": 10.0,
+        "deviation": -3.0,
+        "deviation_pct": -30.0
+      },
+      "Insufficient Research": {
+        "count": 13,
+        "expected": 10.0,
+        "deviation": 3.0,
+        "deviation_pct": 30.0
+      },
+      "Missing Parameters": {
+        "count": 9,
+        "expected": 10.0,
+        "deviation": -1.0,
+        "deviation_pct": -10.0
+      },
+      "Multi-Step Execution Failure": {
+        "count": 8,
+        "expected": 10.0,
+        "deviation": -2.0,
+        "deviation_pct": -20.0
+      },
+      "Recovery Failure": {
+        "count": 8,
+        "expected": 10.0,
+        "deviation": -2.0,
+        "deviation_pct": -20.0
+      },
+      "Wrong Tool Selection": {
+        "count": 12,
+        "expected": 10.0,
+        "deviation": 2.0,
+        "deviation_pct": 20.0
+      }
+    },
+    "max_deviation": 4.0,
+    "min_category": "Incorrect Planning",
+    "max_category": "Hallucinated Information"
+  },
+  "severity_distribution": {
+    "counts": {
+      "low": 23,
+      "medium": 47,
+      "high": 24,
+      "critical": 6
+    },
+    "target_pcts": {
+      "low": 20.0,
+      "medium": 50.0,
+      "high": 25.0,
+      "critical": 5.0
+    },
+    "actual_pcts": {
+      "low": 23.0,
+      "medium": 47.0,
+      "high": 24.0,
+      "critical": 6.0
+    },
+    "deviations": {
+      "low": 3.0,
+      "medium": -3.0,
+      "high": -1.0,
+      "critical": 1.0
+    },
+    "chi_square_stat": 0.87,
+    "within_tolerance": true
+  },
+  "difficulty_distribution": {
+    "counts": {
+      "easy": 31,
+      "medium": 48,
+      "hard": 21
+    },
+    "target_pcts": {
+      "easy": 30.0,
+      "medium": 50.0,
+      "hard": 20.0
+    },
+    "actual_pcts": {
+      "easy": 31.0,
+      "medium": 48.0,
+      "hard": 21.0
+    },
+    "deviations": {
+      "easy": 1.0,
+      "medium": -2.0,
+      "hard": 1.0
+    },
+    "chi_square_stat": 0.1633,
+    "within_tolerance": true
+  },
+  "recovery_plan_diversity": {
+    "unique_first_step_patterns": 39,
+    "first_step_pattern_entropy": 4.4163,
+    "avg_steps_per_plan": 4.81,
+    "total_unique_recovery_texts": 100,
+    "top_first_step_patterns": {
+      "Flag the unverified claim": 14,
+      "Compare the current state": 11,
+      "Reconstruct the full task": 10,
+      "Detect the missing-argument symptom:": 9,
+      "Trace the chain to": 8,
+      "Stop the failing recovery": 8,
+      "Reconstruct the dependency graph": 7,
+      "Pause acting on verify": 2,
+      "Identify that edit_file ran": 1,
+      "Pause acting on sync": 1,
+      "Detect that kb_article_fetch produced": 1,
+      "Identify that sql_query ran": 1,
+      "Identify that report_generate ran": 1,
+      "Pause acting on create": 1,
+      "Pause acting on refactor": 1
+    }
+  },
+  "tool_diversity": {
+    "unique_tools": 106,
+    "total_tool_occurrences": 350,
+    "avg_tools_per_example": 3.5,
+    "top_tools": {
+      "ast_search": 8,
+      "edit_file": 7,
+      "log_search": 7,
+      "tax_calculate": 7,
+      "zendesk_search": 7,
+      "sql_query": 7,
+      "dbt_run": 7,
+      "build_project": 6,
+      "web_search": 6,
+      "wikipedia_lookup": 6,
+      "audit_trail_write": 5,
+      "report_generate": 5,
+      "grep_search": 5,
+      "run_tests": 5,
+      "find_references": 5,
+      "approval_route": 5,
+      "secret_scan": 5,
+      "cve_lookup": 5,
+      "lock_inspect": 5,
+      "s3_copy": 5
+    }
+  },
+  "root_cause_diversity": {
+    "unique_root_cause_patterns": 48,
+    "root_cause_entropy": 5.0589,
+    "repeated_patterns": 19,
+    "top_root_cause_patterns": {
+      "Tool selected by surface-level name matching": 12,
+      "Workflow terminated early: the agent treated": 11,
+      "Flawed plan structure: the ordering/strategy was": 7,
+      "Insufficient context gathering: the agent did": 4,
+      "Fabricated content: the agent fabricated a": 4,
+      "Unverified intermediate result: an intermediate call": 3,
+      "State/context loss: the agent forgot the": 3,
+      "Insufficient context gathering: the agent failed": 3,
+      "Fabricated content: the agent reported a": 3,
+      "Insufficient context gathering: the agent ignored": 3,
+      "State/context loss: the agent ignored an": 2,
+      "Unverified intermediate result: a partial write": 2,
+      "Fabricated content: the agent referenced an": 2,
+      "State/context loss: the agent reused a": 2,
+      "Insufficient context gathering: the agent never": 2
+    }
+  },
+  "quality_score": {
+    "schema_score": 100.0,
+    "exact_dup_score": 100.0,
+    "near_dup_score": 100.0,
+    "category_balance_score": 60.0,
+    "severity_score": 90.0,
+    "difficulty_score": 93.33333333333333,
+    "tool_diversity_score": 100,
+    "root_cause_diversity_score": 100,
+    "recovery_diversity_score": 88.3,
+    "diversity_score": 96.1,
+    "composite_quality_score": 91.6
+  }
+}

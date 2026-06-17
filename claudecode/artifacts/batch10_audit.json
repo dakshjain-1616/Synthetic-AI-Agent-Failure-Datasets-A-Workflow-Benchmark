@@ -1,0 +1,111 @@
+{
+  "total": 100,
+  "by_category": {
+    "Recovery Failure": 100
+  },
+  "by_severity": {
+    "Low": 20,
+    "Medium": 50,
+    "High": 25,
+    "Critical": 5
+  },
+  "by_difficulty": {
+    "Easy": 30,
+    "Medium": 50,
+    "Hard": 20
+  },
+  "severity_pct": {
+    "Low": 20.0,
+    "Medium": 50.0,
+    "High": 25.0,
+    "Critical": 5.0
+  },
+  "difficulty_pct": {
+    "Easy": 30.0,
+    "Medium": 50.0,
+    "Hard": 20.0
+  },
+  "unique_failure_types": 100,
+  "unique_tools": 145,
+  "top_tools": [
+    [
+      "Bash",
+      38
+    ],
+    [
+      "Read",
+      36
+    ],
+    [
+      "Edit",
+      20
+    ],
+    [
+      "WebFetch",
+      10
+    ],
+    [
+      "psql",
+      10
+    ],
+    [
+      "Write",
+      5
+    ],
+    [
+      "web_fetch",
+      5
+    ],
+    [
+      "mcp__ide__executeCode",
+      5
+    ],
+    [
+      "Grep",
+      4
+    ],
+    [
+      "web_search",
+      4
+    ],
+    [
+      "embeddings.create",
+      4
+    ],
+    [
+      "gdrive.files.list",
+      4
+    ],
+    [
+      "mcp__neo__neo_add_integration",
+      4
+    ],
+    [
+      "mcp__neo__neo_list_integrations",
+      3
+    ],
+    [
+      "vector_search",
+      3
+    ]
+  ],
+  "unique_root_cause_prefixes": 100,
+  "unique_user_requests": 100,
+  "unique_recovery_steps": 498,
+  "avg_recovery_steps": 4.98,
+  "most_repeated_recovery_step": [
+    [
+      "read the exact webpack error and extract the unresolved specifier",
+      1
+    ],
+    [
+      "grep rn app ui button src to find all stale imports",
+      1
+    ],
+    [
+      "check node_modules app ui package json exports map for the new path",
+      1
+    ]
+  ],
+  "unique_eval_criteria": 299
+}

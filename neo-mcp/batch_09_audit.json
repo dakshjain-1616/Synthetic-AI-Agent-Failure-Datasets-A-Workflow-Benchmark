@@ -1,0 +1,243 @@
+{
+  "file": "batch_09.jsonl",
+  "total_examples": 100,
+  "parse_errors": [],
+  "schema_validation": {
+    "total": 100,
+    "passed": 100,
+    "failed": 0,
+    "issues": [],
+    "field_completeness": {
+      "total_fields": 15,
+      "fields_with_empty": {}
+    }
+  },
+  "exact_duplicates": {
+    "total_exact_duplicates": 0,
+    "exact_duplicate_rate": 0.0,
+    "duplicate_pairs": []
+  },
+  "near_duplicates": {
+    "total_near_duplicates": 0,
+    "near_duplicate_rate": 0.0,
+    "threshold_used": 0.85,
+    "pairs": []
+  },
+  "category_balance": {
+    "counts": {
+      "Incorrect Planning": 15,
+      "Recovery Failure": 14,
+      "Incomplete Workflow": 13,
+      "Multi-Step Execution Failure": 11,
+      "Incorrect Parameters": 9,
+      "Insufficient Research": 9,
+      "Context Loss": 9,
+      "Wrong Tool Selection": 8,
+      "Hallucinated Information": 6,
+      "Missing Parameters": 6
+    },
+    "expected_per_category": 10.0,
+    "deviations": {
+      "Context Loss": {
+        "count": 9,
+        "expected": 10.0,
+        "deviation": -1.0,
+        "deviation_pct": -10.0
+      },
+      "Hallucinated Information": {
+        "count": 6,
+        "expected": 10.0,
+        "deviation": -4.0,
+        "deviation_pct": -40.0
+      },
+      "Incomplete Workflow": {
+        "count": 13,
+        "expected": 10.0,
+        "deviation": 3.0,
+        "deviation_pct": 30.0
+      },
+      "Incorrect Parameters": {
+        "count": 9,
+        "expected": 10.0,
+        "deviation": -1.0,
+        "deviation_pct": -10.0
+      },
+      "Incorrect Planning": {
+        "count": 15,
+        "expected": 10.0,
+        "deviation": 5.0,
+        "deviation_pct": 50.0
+      },
+      "Insufficient Research": {
+        "count": 9,
+        "expected": 10.0,
+        "deviation": -1.0,
+        "deviation_pct": -10.0
+      },
+      "Missing Parameters": {
+        "count": 6,
+        "expected": 10.0,
+        "deviation": -4.0,
+        "deviation_pct": -40.0
+      },
+      "Multi-Step Execution Failure": {
+        "count": 11,
+        "expected": 10.0,
+        "deviation": 1.0,
+        "deviation_pct": 10.0
+      },
+      "Recovery Failure": {
+        "count": 14,
+        "expected": 10.0,
+        "deviation": 4.0,
+        "deviation_pct": 40.0
+      },
+      "Wrong Tool Selection": {
+        "count": 8,
+        "expected": 10.0,
+        "deviation": -2.0,
+        "deviation_pct": -20.0
+      }
+    },
+    "max_deviation": 5.0,
+    "min_category": "Hallucinated Information",
+    "max_category": "Incorrect Planning"
+  },
+  "severity_distribution": {
+    "counts": {
+      "low": 16,
+      "medium": 47,
+      "high": 27,
+      "critical": 10
+    },
+    "target_pcts": {
+      "low": 20.0,
+      "medium": 50.0,
+      "high": 25.0,
+      "critical": 5.0
+    },
+    "actual_pcts": {
+      "low": 16.0,
+      "medium": 47.0,
+      "high": 27.0,
+      "critical": 10.0
+    },
+    "deviations": {
+      "low": -4.0,
+      "medium": -3.0,
+      "high": 2.0,
+      "critical": 5.0
+    },
+    "chi_square_stat": 6.14,
+    "within_tolerance": true
+  },
+  "difficulty_distribution": {
+    "counts": {
+      "easy": 31,
+      "medium": 51,
+      "hard": 18
+    },
+    "target_pcts": {
+      "easy": 30.0,
+      "medium": 50.0,
+      "hard": 20.0
+    },
+    "actual_pcts": {
+      "easy": 31.0,
+      "medium": 51.0,
+      "hard": 18.0
+    },
+    "deviations": {
+      "easy": 1.0,
+      "medium": 1.0,
+      "hard": -2.0
+    },
+    "chi_square_stat": 0.2533,
+    "within_tolerance": true
+  },
+  "recovery_plan_diversity": {
+    "unique_first_step_patterns": 32,
+    "first_step_pattern_entropy": 4.0477,
+    "avg_steps_per_plan": 4.82,
+    "total_unique_recovery_texts": 99,
+    "top_first_step_patterns": {
+      "Reconstruct the dependency graph": 15,
+      "Stop the failing recovery": 14,
+      "Compare the current state": 13,
+      "Trace the chain to": 11,
+      "Reconstruct the full task": 9,
+      "Flag the unverified claim": 6,
+      "Detect the missing-argument symptom:": 6,
+      "Detect that github_create_issue produced": 2,
+      "Identify that az_cli ran": 1,
+      "Detect that export_onnx produced": 1,
+      "Identify that escalate ran": 1,
+      "Pause acting on tighten": 1,
+      "Pause acting on triage": 1,
+      "Pause acting on validate": 1,
+      "Detect that feature_transform produced": 1
+    }
+  },
+  "tool_diversity": {
+    "unique_tools": 109,
+    "total_tool_occurrences": 344,
+    "avg_tools_per_example": 3.44,
+    "top_tools": {
+      "sql_query": 9,
+      "feature_transform": 6,
+      "data_loader": 6,
+      "hpo_sweep": 6,
+      "web_search": 6,
+      "create_index": 6,
+      "cve_lookup": 6,
+      "rate_limit_wait": 6,
+      "gcloud": 5,
+      "train_model": 5,
+      "export_onnx": 5,
+      "docker_build": 5,
+      "aws_cli": 5,
+      "pagerduty_ack": 5,
+      "evaluate_model": 5,
+      "tensorboard_log": 5,
+      "knowledge_base_query": 5,
+      "web_fetch": 5,
+      "run_tests": 5,
+      "reindex": 5
+    }
+  },
+  "root_cause_diversity": {
+    "unique_root_cause_patterns": 49,
+    "root_cause_entropy": 4.9292,
+    "repeated_patterns": 16,
+    "top_root_cause_patterns": {
+      "Flawed plan structure: the ordering/strategy was": 15,
+      "Workflow terminated early: the agent treated": 13,
+      "Tool selected by surface-level name matching": 8,
+      "State/context loss: the agent lost track": 4,
+      "Unverified intermediate result: the agent used": 4,
+      "Unverified intermediate result: step 2 returned": 3,
+      "Insufficient context gathering: the agent skipped": 2,
+      "State/context loss: the agent forgot the": 2,
+      "Insufficient context gathering: the agent ignored": 2,
+      "Insufficient context gathering: the agent did": 2,
+      "Faulty recovery: in response to could": 2,
+      "Unverified intermediate result: a partial write": 2,
+      "Insufficient context gathering: the agent never": 2,
+      "Faulty recovery: in response to trial": 2,
+      "Fabricated content: the agent claimed the": 2
+    }
+  },
+  "quality_score": {
+    "schema_score": 100.0,
+    "exact_dup_score": 100.0,
+    "near_dup_score": 100.0,
+    "category_balance_score": 48.0,
+    "severity_score": 82.5,
+    "difficulty_score": 93.33333333333333,
+    "tool_diversity_score": 100,
+    "root_cause_diversity_score": 98.6,
+    "recovery_diversity_score": 81.0,
+    "diversity_score": 93.2,
+    "composite_quality_score": 88.4
+  }
+}

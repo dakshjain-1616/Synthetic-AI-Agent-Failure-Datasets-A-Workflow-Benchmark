@@ -1,0 +1,39 @@
+# CHUNK ASSIGNMENT — Incomplete Workflow [C]
+
+You are a generation subagent for a synthetic AI-agent-failure dataset.
+Working directory: /home/azureuser/AGENTFailureDatasetGeneration/claudecode
+
+STEP 1 — Read these two files IN FULL before writing anything:
+  - SPEC.md  (output format, realism bar, diversity rules, anchor examples)
+  - taxonomy_definition.md  (category/severity/difficulty definitions)
+
+STEP 2 — Produce EXACTLY 25 examples for this single category:
+  failure_category = "Incomplete Workflow"   (every one of your 25 examples is THIS category)
+
+ID range (assign sequentially, no gaps, no duplicates):
+  afd_0351 .. afd_0375
+
+Write the 25 examples as JSONL (one JSON object per line, nothing else in the file) to:
+  data/batches/cat04_incomplete_workflow_C.jsonl
+
+DOMAINS — spread your 25 examples across these, roughly evenly, each example a
+distinct concrete scenario with real tool names / paths / IDs:
+  frontend/UI code (React/TypeScript), Kubernetes operations (kubectl/helm), data warehouse SQL (BigQuery/Snowflake), ML model training pipelines, the Slack MCP server, and observability/logs (Datadog/Grafana/Prometheus)
+
+EXACT severity counts (must sum to 25): Low=5, Medium=12, High=6, Critical=2
+EXACT difficulty counts (must sum to 25): Easy=7, Medium=13, Hard=5
+
+Spread severity and difficulty across different domains — do not let all the Hard
+or all the Critical examples fall in one domain or share one mechanism.
+
+STEP 3 — Self-check before finishing:
+  - Exactly 25 lines, each valid JSON with all 15 required keys.
+  - IDs exactly afd_0351 .. afd_0375.
+  - Severity tally matches the quota above EXACTLY.
+  - Difficulty tally matches the quota above EXACTLY.
+  - Every failure_category value is "Incomplete Workflow".
+  - No two examples share the same tool+mechanism or opening phrasing.
+  - Each `why_it_failed` states the faulty assumption, why it was wrong, and how it was avoidable.
+
+Return ONLY a short summary (count written, severity tally, difficulty tally,
+domains used, and the output file path). Do NOT paste the examples back to me.

@@ -1,0 +1,111 @@
+{
+  "total": 100,
+  "by_category": {
+    "Insufficient Research": 100
+  },
+  "by_severity": {
+    "Low": 20,
+    "Medium": 50,
+    "High": 25,
+    "Critical": 5
+  },
+  "by_difficulty": {
+    "Easy": 30,
+    "Medium": 50,
+    "Hard": 20
+  },
+  "severity_pct": {
+    "Low": 20.0,
+    "Medium": 50.0,
+    "High": 25.0,
+    "Critical": 5.0
+  },
+  "difficulty_pct": {
+    "Easy": 30.0,
+    "Medium": 50.0,
+    "Hard": 20.0
+  },
+  "unique_failure_types": 100,
+  "unique_tools": 156,
+  "top_tools": [
+    [
+      "Read",
+      42
+    ],
+    [
+      "Bash",
+      18
+    ],
+    [
+      "ripgrep",
+      17
+    ],
+    [
+      "Grep",
+      16
+    ],
+    [
+      "Edit",
+      11
+    ],
+    [
+      "web_search",
+      7
+    ],
+    [
+      "browser.open",
+      4
+    ],
+    [
+      "browser.read_page",
+      4
+    ],
+    [
+      "vector_db.query",
+      4
+    ],
+    [
+      "document.get_chunk",
+      4
+    ],
+    [
+      "gdrive.files.get",
+      4
+    ],
+    [
+      "gmail.messages.get",
+      4
+    ],
+    [
+      "mcp__google_calendar__update_event",
+      4
+    ],
+    [
+      "curl",
+      4
+    ],
+    [
+      "dbt.docs",
+      4
+    ]
+  ],
+  "unique_root_cause_prefixes": 100,
+  "unique_user_requests": 100,
+  "unique_recovery_steps": 498,
+  "avg_recovery_steps": 4.98,
+  "most_repeated_recovery_step": [
+    [
+      "recognize the figure was not sourced",
+      1
+    ],
+    [
+      "run web_search for the aws lambda quotas documentation",
+      1
+    ],
+    [
+      "fetch the official page and read the current default",
+      1
+    ]
+  ],
+  "unique_eval_criteria": 300
+}

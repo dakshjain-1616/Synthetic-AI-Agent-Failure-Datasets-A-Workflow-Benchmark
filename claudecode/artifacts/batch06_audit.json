@@ -1,0 +1,111 @@
+{
+  "total": 100,
+  "by_category": {
+    "Hallucinated Information": 100
+  },
+  "by_severity": {
+    "Low": 20,
+    "Medium": 50,
+    "High": 25,
+    "Critical": 5
+  },
+  "by_difficulty": {
+    "Easy": 30,
+    "Medium": 50,
+    "Hard": 20
+  },
+  "severity_pct": {
+    "Low": 20.0,
+    "Medium": 50.0,
+    "High": 25.0,
+    "Critical": 5.0
+  },
+  "difficulty_pct": {
+    "Easy": 30.0,
+    "Medium": 50.0,
+    "Hard": 20.0
+  },
+  "unique_failure_types": 100,
+  "unique_tools": 134,
+  "top_tools": [
+    [
+      "Read",
+      37
+    ],
+    [
+      "Bash",
+      19
+    ],
+    [
+      "rg",
+      14
+    ],
+    [
+      "grep",
+      12
+    ],
+    [
+      "WebFetch",
+      11
+    ],
+    [
+      "read_file",
+      8
+    ],
+    [
+      "ripgrep",
+      7
+    ],
+    [
+      "pytest",
+      5
+    ],
+    [
+      "mcp__neo__neo_list_integrations",
+      5
+    ],
+    [
+      "psql",
+      5
+    ],
+    [
+      "tsc",
+      4
+    ],
+    [
+      "python",
+      4
+    ],
+    [
+      "web_search",
+      4
+    ],
+    [
+      "browser.open",
+      4
+    ],
+    [
+      "web_fetch",
+      4
+    ]
+  ],
+  "unique_root_cause_prefixes": 100,
+  "unique_user_requests": 100,
+  "unique_recovery_steps": 491,
+  "avg_recovery_steps": 4.91,
+  "most_repeated_recovery_step": [
+    [
+      "reproduce the runtime typeerror on save",
+      1
+    ],
+    [
+      "open chakra ui usetoast typings in node_modules",
+      1
+    ],
+    [
+      "replace success with the status based options object",
+      1
+    ]
+  ],
+  "unique_eval_criteria": 300
+}

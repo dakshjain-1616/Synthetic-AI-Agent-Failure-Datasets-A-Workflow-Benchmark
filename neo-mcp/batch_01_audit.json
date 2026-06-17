@@ -1,0 +1,243 @@
+{
+  "file": "batch_01.jsonl",
+  "total_examples": 100,
+  "parse_errors": [],
+  "schema_validation": {
+    "total": 100,
+    "passed": 100,
+    "failed": 0,
+    "issues": [],
+    "field_completeness": {
+      "total_fields": 15,
+      "fields_with_empty": {}
+    }
+  },
+  "exact_duplicates": {
+    "total_exact_duplicates": 0,
+    "exact_duplicate_rate": 0.0,
+    "duplicate_pairs": []
+  },
+  "near_duplicates": {
+    "total_near_duplicates": 0,
+    "near_duplicate_rate": 0.0,
+    "threshold_used": 0.85,
+    "pairs": []
+  },
+  "category_balance": {
+    "counts": {
+      "Wrong Tool Selection": 14,
+      "Context Loss": 13,
+      "Incomplete Workflow": 12,
+      "Multi-Step Execution Failure": 12,
+      "Missing Parameters": 11,
+      "Hallucinated Information": 10,
+      "Insufficient Research": 8,
+      "Recovery Failure": 7,
+      "Incorrect Parameters": 7,
+      "Incorrect Planning": 6
+    },
+    "expected_per_category": 10.0,
+    "deviations": {
+      "Context Loss": {
+        "count": 13,
+        "expected": 10.0,
+        "deviation": 3.0,
+        "deviation_pct": 30.0
+      },
+      "Hallucinated Information": {
+        "count": 10,
+        "expected": 10.0,
+        "deviation": 0.0,
+        "deviation_pct": 0.0
+      },
+      "Incomplete Workflow": {
+        "count": 12,
+        "expected": 10.0,
+        "deviation": 2.0,
+        "deviation_pct": 20.0
+      },
+      "Incorrect Parameters": {
+        "count": 7,
+        "expected": 10.0,
+        "deviation": -3.0,
+        "deviation_pct": -30.0
+      },
+      "Incorrect Planning": {
+        "count": 6,
+        "expected": 10.0,
+        "deviation": -4.0,
+        "deviation_pct": -40.0
+      },
+      "Insufficient Research": {
+        "count": 8,
+        "expected": 10.0,
+        "deviation": -2.0,
+        "deviation_pct": -20.0
+      },
+      "Missing Parameters": {
+        "count": 11,
+        "expected": 10.0,
+        "deviation": 1.0,
+        "deviation_pct": 10.0
+      },
+      "Multi-Step Execution Failure": {
+        "count": 12,
+        "expected": 10.0,
+        "deviation": 2.0,
+        "deviation_pct": 20.0
+      },
+      "Recovery Failure": {
+        "count": 7,
+        "expected": 10.0,
+        "deviation": -3.0,
+        "deviation_pct": -30.0
+      },
+      "Wrong Tool Selection": {
+        "count": 14,
+        "expected": 10.0,
+        "deviation": 4.0,
+        "deviation_pct": 40.0
+      }
+    },
+    "max_deviation": -4.0,
+    "min_category": "Incorrect Planning",
+    "max_category": "Incorrect Planning"
+  },
+  "severity_distribution": {
+    "counts": {
+      "low": 19,
+      "medium": 52,
+      "high": 28,
+      "critical": 1
+    },
+    "target_pcts": {
+      "low": 20.0,
+      "medium": 50.0,
+      "high": 25.0,
+      "critical": 5.0
+    },
+    "actual_pcts": {
+      "low": 19.0,
+      "medium": 52.0,
+      "high": 28.0,
+      "critical": 1.0
+    },
+    "deviations": {
+      "low": -1.0,
+      "medium": 2.0,
+      "high": 3.0,
+      "critical": -4.0
+    },
+    "chi_square_stat": 3.69,
+    "within_tolerance": true
+  },
+  "difficulty_distribution": {
+    "counts": {
+      "easy": 37,
+      "medium": 43,
+      "hard": 20
+    },
+    "target_pcts": {
+      "easy": 30.0,
+      "medium": 50.0,
+      "hard": 20.0
+    },
+    "actual_pcts": {
+      "easy": 37.0,
+      "medium": 43.0,
+      "hard": 20.0
+    },
+    "deviations": {
+      "easy": 7.0,
+      "medium": -7.0,
+      "hard": 0.0
+    },
+    "chi_square_stat": 2.6133,
+    "within_tolerance": false
+  },
+  "recovery_plan_diversity": {
+    "unique_first_step_patterns": 35,
+    "first_step_pattern_entropy": 4.2181,
+    "avg_steps_per_plan": 4.83,
+    "total_unique_recovery_texts": 100,
+    "top_first_step_patterns": {
+      "Reconstruct the full task": 13,
+      "Compare the current state": 12,
+      "Trace the chain to": 12,
+      "Detect the missing-argument symptom:": 11,
+      "Flag the unverified claim": 10,
+      "Stop the failing recovery": 7,
+      "Reconstruct the dependency graph": 6,
+      "Detect that dbt_run produced": 2,
+      "Detect that datadog_query produced": 1,
+      "Pause acting on export": 1,
+      "Pause acting on close": 1,
+      "Identify that evaluate_model ran": 1,
+      "Detect that kms_encrypt produced": 1,
+      "Pause acting on track": 1,
+      "Pause acting on file": 1
+    }
+  },
+  "tool_diversity": {
+    "unique_tools": 107,
+    "total_tool_occurrences": 359,
+    "avg_tools_per_example": 3.59,
+    "top_tools": {
+      "helm_upgrade": 10,
+      "terraform_apply": 9,
+      "evaluate_model": 7,
+      "tensorboard_log": 7,
+      "macro_apply": 6,
+      "datadog_query": 6,
+      "web_search": 6,
+      "translate": 6,
+      "vault_read": 6,
+      "mcp_list_tools": 5,
+      "spark_submit": 5,
+      "reconcile": 5,
+      "ticket_update": 5,
+      "feature_transform": 5,
+      "ssh_exec": 5,
+      "data_loader": 5,
+      "webhook_register": 5,
+      "replica_status": 5,
+      "order_lookup": 5,
+      "pdf_extract": 5
+    }
+  },
+  "root_cause_diversity": {
+    "unique_root_cause_patterns": 49,
+    "root_cause_entropy": 5.0202,
+    "repeated_patterns": 17,
+    "top_root_cause_patterns": {
+      "Tool selected by surface-level name matching": 14,
+      "Workflow terminated early: the agent treated": 12,
+      "Flawed plan structure: the ordering/strategy was": 6,
+      "Insufficient context gathering: the agent assumed": 4,
+      "State/context loss: the agent re-applied a": 3,
+      "Unverified intermediate result: the agent did": 3,
+      "State/context loss: the agent reused a": 3,
+      "Fabricated content: the agent referenced an": 3,
+      "State/context loss: the agent ignored an": 3,
+      "State/context loss: the agent forgot the": 3,
+      "Fabricated content: the agent cited a": 2,
+      "Unverified intermediate result: a transient failure": 2,
+      "Insufficient context gathering: the agent ignored": 2,
+      "Unverified intermediate result: an intermediate call": 2,
+      "Unverified intermediate result: a partial write": 2
+    }
+  },
+  "quality_score": {
+    "schema_score": 100.0,
+    "exact_dup_score": 100.0,
+    "near_dup_score": 100.0,
+    "category_balance_score": 52.0,
+    "severity_score": 87.5,
+    "difficulty_score": 76.66666666666666,
+    "tool_diversity_score": 100,
+    "root_cause_diversity_score": 100,
+    "recovery_diversity_score": 84.4,
+    "diversity_score": 94.8,
+    "composite_quality_score": 88.2
+  }
+}

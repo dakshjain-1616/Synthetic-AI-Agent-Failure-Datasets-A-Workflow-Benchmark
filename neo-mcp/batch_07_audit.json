@@ -1,0 +1,243 @@
+{
+  "file": "batch_07.jsonl",
+  "total_examples": 100,
+  "parse_errors": [],
+  "schema_validation": {
+    "total": 100,
+    "passed": 100,
+    "failed": 0,
+    "issues": [],
+    "field_completeness": {
+      "total_fields": 15,
+      "fields_with_empty": {}
+    }
+  },
+  "exact_duplicates": {
+    "total_exact_duplicates": 0,
+    "exact_duplicate_rate": 0.0,
+    "duplicate_pairs": []
+  },
+  "near_duplicates": {
+    "total_near_duplicates": 0,
+    "near_duplicate_rate": 0.0,
+    "threshold_used": 0.85,
+    "pairs": []
+  },
+  "category_balance": {
+    "counts": {
+      "Multi-Step Execution Failure": 14,
+      "Incomplete Workflow": 12,
+      "Context Loss": 11,
+      "Incorrect Parameters": 10,
+      "Missing Parameters": 10,
+      "Recovery Failure": 10,
+      "Insufficient Research": 10,
+      "Wrong Tool Selection": 9,
+      "Incorrect Planning": 7,
+      "Hallucinated Information": 7
+    },
+    "expected_per_category": 10.0,
+    "deviations": {
+      "Context Loss": {
+        "count": 11,
+        "expected": 10.0,
+        "deviation": 1.0,
+        "deviation_pct": 10.0
+      },
+      "Hallucinated Information": {
+        "count": 7,
+        "expected": 10.0,
+        "deviation": -3.0,
+        "deviation_pct": -30.0
+      },
+      "Incomplete Workflow": {
+        "count": 12,
+        "expected": 10.0,
+        "deviation": 2.0,
+        "deviation_pct": 20.0
+      },
+      "Incorrect Parameters": {
+        "count": 10,
+        "expected": 10.0,
+        "deviation": 0.0,
+        "deviation_pct": 0.0
+      },
+      "Incorrect Planning": {
+        "count": 7,
+        "expected": 10.0,
+        "deviation": -3.0,
+        "deviation_pct": -30.0
+      },
+      "Insufficient Research": {
+        "count": 10,
+        "expected": 10.0,
+        "deviation": 0.0,
+        "deviation_pct": 0.0
+      },
+      "Missing Parameters": {
+        "count": 10,
+        "expected": 10.0,
+        "deviation": 0.0,
+        "deviation_pct": 0.0
+      },
+      "Multi-Step Execution Failure": {
+        "count": 14,
+        "expected": 10.0,
+        "deviation": 4.0,
+        "deviation_pct": 40.0
+      },
+      "Recovery Failure": {
+        "count": 10,
+        "expected": 10.0,
+        "deviation": 0.0,
+        "deviation_pct": 0.0
+      },
+      "Wrong Tool Selection": {
+        "count": 9,
+        "expected": 10.0,
+        "deviation": -1.0,
+        "deviation_pct": -10.0
+      }
+    },
+    "max_deviation": 4.0,
+    "min_category": "Incorrect Planning",
+    "max_category": "Multi-Step Execution Failure"
+  },
+  "severity_distribution": {
+    "counts": {
+      "low": 22,
+      "medium": 45,
+      "high": 27,
+      "critical": 6
+    },
+    "target_pcts": {
+      "low": 20.0,
+      "medium": 50.0,
+      "high": 25.0,
+      "critical": 5.0
+    },
+    "actual_pcts": {
+      "low": 22.0,
+      "medium": 45.0,
+      "high": 27.0,
+      "critical": 6.0
+    },
+    "deviations": {
+      "low": 2.0,
+      "medium": -5.0,
+      "high": 2.0,
+      "critical": 1.0
+    },
+    "chi_square_stat": 1.06,
+    "within_tolerance": true
+  },
+  "difficulty_distribution": {
+    "counts": {
+      "easy": 32,
+      "medium": 52,
+      "hard": 16
+    },
+    "target_pcts": {
+      "easy": 30.0,
+      "medium": 50.0,
+      "hard": 20.0
+    },
+    "actual_pcts": {
+      "easy": 32.0,
+      "medium": 52.0,
+      "hard": 16.0
+    },
+    "deviations": {
+      "easy": 2.0,
+      "medium": 2.0,
+      "hard": -4.0
+    },
+    "chi_square_stat": 1.0133,
+    "within_tolerance": true
+  },
+  "recovery_plan_diversity": {
+    "unique_first_step_patterns": 33,
+    "first_step_pattern_entropy": 4.1827,
+    "avg_steps_per_plan": 4.85,
+    "total_unique_recovery_texts": 100,
+    "top_first_step_patterns": {
+      "Trace the chain to": 14,
+      "Compare the current state": 12,
+      "Reconstruct the full task": 11,
+      "Detect the missing-argument symptom:": 10,
+      "Stop the failing recovery": 10,
+      "Reconstruct the dependency graph": 7,
+      "Flag the unverified claim": 7,
+      "Pause acting on evaluate": 2,
+      "Pause acting on find": 2,
+      "Identify that s3_lifecycle ran": 2,
+      "Detect that read_file produced": 1,
+      "Detect that salesforce_query produced": 1,
+      "Identify that cloudformation_deploy ran": 1,
+      "Identify that fx_convert ran": 1,
+      "Identify that slack_post ran": 1
+    }
+  },
+  "tool_diversity": {
+    "unique_tools": 106,
+    "total_tool_occurrences": 346,
+    "avg_tools_per_example": 3.46,
+    "top_tools": {
+      "fx_convert": 8,
+      "bigquery_job": 7,
+      "tax_calculate": 7,
+      "cve_lookup": 7,
+      "reconcile": 7,
+      "terraform_apply": 7,
+      "kms_encrypt": 6,
+      "pdf_extract": 6,
+      "stripe_api": 6,
+      "export_onnx": 6,
+      "metric_compute": 6,
+      "find_references": 5,
+      "shopify_api": 5,
+      "rate_limit_wait": 5,
+      "report_generate": 5,
+      "audit_trail_write": 5,
+      "gmail_send": 5,
+      "approval_route": 5,
+      "http_request": 5,
+      "web_fetch": 5
+    }
+  },
+  "root_cause_diversity": {
+    "unique_root_cause_patterns": 51,
+    "root_cause_entropy": 5.117,
+    "repeated_patterns": 14,
+    "top_root_cause_patterns": {
+      "Workflow terminated early: the agent treated": 12,
+      "Tool selected by surface-level name matching": 9,
+      "Flawed plan structure: the ordering/strategy was": 7,
+      "State/context loss: the agent ignored an": 5,
+      "Unverified intermediate result: an intermediate call": 5,
+      "Unverified intermediate result: the agent did": 4,
+      "Insufficient context gathering: the agent did": 4,
+      "Insufficient context gathering: the agent failed": 3,
+      "Fabricated content: the agent invented a": 3,
+      "Insufficient context gathering: the agent ignored": 3,
+      "Faulty recovery: in response to TLS": 2,
+      "Unverified intermediate result: step 2 returned": 2,
+      "State/context loss: the agent overwrote a": 2,
+      "Right tool, wrong value: s3_lifecycle was": 2,
+      "Right tool, wrong value: cloudformation_deploy was": 1
+    }
+  },
+  "quality_score": {
+    "schema_score": 100.0,
+    "exact_dup_score": 100.0,
+    "near_dup_score": 100.0,
+    "category_balance_score": 72.0,
+    "severity_score": 87.5,
+    "difficulty_score": 86.66666666666667,
+    "tool_diversity_score": 100,
+    "root_cause_diversity_score": 100,
+    "recovery_diversity_score": 83.7,
+    "diversity_score": 94.6,
+    "composite_quality_score": 92.1
+  }
+}

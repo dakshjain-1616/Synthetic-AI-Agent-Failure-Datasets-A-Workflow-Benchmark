@@ -1,0 +1,111 @@
+{
+  "total": 100,
+  "by_category": {
+    "Incorrect Parameters": 100
+  },
+  "by_severity": {
+    "Low": 20,
+    "Medium": 50,
+    "High": 25,
+    "Critical": 5
+  },
+  "by_difficulty": {
+    "Easy": 30,
+    "Medium": 50,
+    "Hard": 20
+  },
+  "severity_pct": {
+    "Low": 20.0,
+    "Medium": 50.0,
+    "High": 25.0,
+    "Critical": 5.0
+  },
+  "difficulty_pct": {
+    "Easy": 30.0,
+    "Medium": 50.0,
+    "Hard": 20.0
+  },
+  "unique_failure_types": 100,
+  "unique_tools": 177,
+  "top_tools": [
+    [
+      "Read",
+      18
+    ],
+    [
+      "web_fetch",
+      5
+    ],
+    [
+      "Edit",
+      4
+    ],
+    [
+      "bigquery.jobs.query",
+      4
+    ],
+    [
+      "web_search",
+      4
+    ],
+    [
+      "pinecone.query",
+      4
+    ],
+    [
+      "http.get",
+      4
+    ],
+    [
+      "Bash",
+      3
+    ],
+    [
+      "openai.embeddings.create",
+      3
+    ],
+    [
+      "gdrive.files.list",
+      3
+    ],
+    [
+      "mcp__google_calendar__events_get",
+      3
+    ],
+    [
+      "mcp__notion__pages_update",
+      3
+    ],
+    [
+      "jq",
+      3
+    ],
+    [
+      "actionlint",
+      3
+    ],
+    [
+      "gh workflow view",
+      3
+    ]
+  ],
+  "unique_root_cause_prefixes": 100,
+  "unique_user_requests": 100,
+  "unique_recovery_steps": 459,
+  "avg_recovery_steps": 4.6,
+  "most_repeated_recovery_step": [
+    [
+      "present the corrected list",
+      2
+    ],
+    [
+      "notice prices render as 4999 in storybook",
+      1
+    ],
+    [
+      "check the api schema confirming the field is in cents",
+      1
+    ]
+  ],
+  "unique_eval_criteria": 275
+}

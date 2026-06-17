@@ -1,0 +1,111 @@
+{
+  "total": 100,
+  "by_category": {
+    "Context Loss": 100
+  },
+  "by_severity": {
+    "Medium": 50,
+    "Low": 20,
+    "High": 25,
+    "Critical": 5
+  },
+  "by_difficulty": {
+    "Medium": 50,
+    "Easy": 30,
+    "Hard": 20
+  },
+  "severity_pct": {
+    "Medium": 50.0,
+    "Low": 20.0,
+    "High": 25.0,
+    "Critical": 5.0
+  },
+  "difficulty_pct": {
+    "Medium": 50.0,
+    "Easy": 30.0,
+    "Hard": 20.0
+  },
+  "unique_failure_types": 100,
+  "unique_tools": 167,
+  "top_tools": [
+    [
+      "Read",
+      34
+    ],
+    [
+      "Edit",
+      31
+    ],
+    [
+      "Bash",
+      8
+    ],
+    [
+      "ripgrep",
+      7
+    ],
+    [
+      "bigquery.jobs.query",
+      6
+    ],
+    [
+      "pytest",
+      6
+    ],
+    [
+      "curl",
+      5
+    ],
+    [
+      "psql",
+      5
+    ],
+    [
+      "mcp__google_calendar__list_events",
+      4
+    ],
+    [
+      "mcp__google_calendar__update_event",
+      4
+    ],
+    [
+      "fastlane",
+      4
+    ],
+    [
+      "salesforce.query",
+      4
+    ],
+    [
+      "mcp__github__get_workflow_run",
+      4
+    ],
+    [
+      "terraform plan",
+      4
+    ],
+    [
+      "mcp__slack__post_message",
+      4
+    ]
+  ],
+  "unique_root_cause_prefixes": 100,
+  "unique_user_requests": 100,
+  "unique_recovery_steps": 492,
+  "avg_recovery_steps": 4.92,
+  "most_repeated_recovery_step": [
+    [
+      "scan the thread for the user s stated current location timezone",
+      1
+    ],
+    [
+      "call mcp__google_calendar__get_event to read the booked recurrence and its timezone",
+      1
+    ],
+    [
+      "patch the series via mcp__google_calendar__update_event to europe berlin",
+      1
+    ]
+  ],
+  "unique_eval_criteria": 300
+}

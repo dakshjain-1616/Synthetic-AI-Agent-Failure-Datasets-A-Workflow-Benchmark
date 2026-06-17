@@ -1,0 +1,243 @@
+{
+  "file": "batch_04.jsonl",
+  "total_examples": 100,
+  "parse_errors": [],
+  "schema_validation": {
+    "total": 100,
+    "passed": 100,
+    "failed": 0,
+    "issues": [],
+    "field_completeness": {
+      "total_fields": 15,
+      "fields_with_empty": {}
+    }
+  },
+  "exact_duplicates": {
+    "total_exact_duplicates": 0,
+    "exact_duplicate_rate": 0.0,
+    "duplicate_pairs": []
+  },
+  "near_duplicates": {
+    "total_near_duplicates": 0,
+    "near_duplicate_rate": 0.0,
+    "threshold_used": 0.85,
+    "pairs": []
+  },
+  "category_balance": {
+    "counts": {
+      "Incorrect Parameters": 14,
+      "Incorrect Planning": 14,
+      "Incomplete Workflow": 13,
+      "Recovery Failure": 12,
+      "Wrong Tool Selection": 12,
+      "Missing Parameters": 10,
+      "Insufficient Research": 8,
+      "Multi-Step Execution Failure": 7,
+      "Context Loss": 5,
+      "Hallucinated Information": 5
+    },
+    "expected_per_category": 10.0,
+    "deviations": {
+      "Context Loss": {
+        "count": 5,
+        "expected": 10.0,
+        "deviation": -5.0,
+        "deviation_pct": -50.0
+      },
+      "Hallucinated Information": {
+        "count": 5,
+        "expected": 10.0,
+        "deviation": -5.0,
+        "deviation_pct": -50.0
+      },
+      "Incomplete Workflow": {
+        "count": 13,
+        "expected": 10.0,
+        "deviation": 3.0,
+        "deviation_pct": 30.0
+      },
+      "Incorrect Parameters": {
+        "count": 14,
+        "expected": 10.0,
+        "deviation": 4.0,
+        "deviation_pct": 40.0
+      },
+      "Incorrect Planning": {
+        "count": 14,
+        "expected": 10.0,
+        "deviation": 4.0,
+        "deviation_pct": 40.0
+      },
+      "Insufficient Research": {
+        "count": 8,
+        "expected": 10.0,
+        "deviation": -2.0,
+        "deviation_pct": -20.0
+      },
+      "Missing Parameters": {
+        "count": 10,
+        "expected": 10.0,
+        "deviation": 0.0,
+        "deviation_pct": 0.0
+      },
+      "Multi-Step Execution Failure": {
+        "count": 7,
+        "expected": 10.0,
+        "deviation": -3.0,
+        "deviation_pct": -30.0
+      },
+      "Recovery Failure": {
+        "count": 12,
+        "expected": 10.0,
+        "deviation": 2.0,
+        "deviation_pct": 20.0
+      },
+      "Wrong Tool Selection": {
+        "count": 12,
+        "expected": 10.0,
+        "deviation": 2.0,
+        "deviation_pct": 20.0
+      }
+    },
+    "max_deviation": -5.0,
+    "min_category": "Context Loss",
+    "max_category": "Context Loss"
+  },
+  "severity_distribution": {
+    "counts": {
+      "low": 23,
+      "medium": 46,
+      "high": 27,
+      "critical": 4
+    },
+    "target_pcts": {
+      "low": 20.0,
+      "medium": 50.0,
+      "high": 25.0,
+      "critical": 5.0
+    },
+    "actual_pcts": {
+      "low": 23.0,
+      "medium": 46.0,
+      "high": 27.0,
+      "critical": 4.0
+    },
+    "deviations": {
+      "low": 3.0,
+      "medium": -4.0,
+      "high": 2.0,
+      "critical": -1.0
+    },
+    "chi_square_stat": 1.13,
+    "within_tolerance": true
+  },
+  "difficulty_distribution": {
+    "counts": {
+      "easy": 26,
+      "medium": 54,
+      "hard": 20
+    },
+    "target_pcts": {
+      "easy": 30.0,
+      "medium": 50.0,
+      "hard": 20.0
+    },
+    "actual_pcts": {
+      "easy": 26.0,
+      "medium": 54.0,
+      "hard": 20.0
+    },
+    "deviations": {
+      "easy": -4.0,
+      "medium": 4.0,
+      "hard": 0.0
+    },
+    "chi_square_stat": 0.8533,
+    "within_tolerance": true
+  },
+  "recovery_plan_diversity": {
+    "unique_first_step_patterns": 38,
+    "first_step_pattern_entropy": 4.3787,
+    "avg_steps_per_plan": 4.82,
+    "total_unique_recovery_texts": 100,
+    "top_first_step_patterns": {
+      "Reconstruct the dependency graph": 14,
+      "Compare the current state": 13,
+      "Stop the failing recovery": 12,
+      "Detect the missing-argument symptom:": 10,
+      "Trace the chain to": 7,
+      "Reconstruct the full task": 5,
+      "Flag the unverified claim": 5,
+      "Identify that shopify_api ran": 2,
+      "Detect that webhook_register produced": 2,
+      "Identify that checkpoint_save ran": 2,
+      "Identify that refund_issue ran": 1,
+      "Pause acting on tune": 1,
+      "Detect that macro_apply produced": 1,
+      "Detect that metric_compute produced": 1,
+      "Identify that airflow_trigger ran": 1
+    }
+  },
+  "tool_diversity": {
+    "unique_tools": 109,
+    "total_tool_occurrences": 354,
+    "avg_tools_per_example": 3.54,
+    "top_tools": {
+      "sentiment_classify": 6,
+      "access_review": 6,
+      "dependency_audit": 6,
+      "oauth_refresh": 6,
+      "stripe_api": 6,
+      "http_request": 6,
+      "approval_route": 6,
+      "aws_cli": 6,
+      "calendar_create_event": 6,
+      "ticket_update": 5,
+      "macro_apply": 5,
+      "refund_issue": 5,
+      "hpo_sweep": 5,
+      "data_loader": 5,
+      "s3_copy": 5,
+      "key_rotate": 5,
+      "evaluate_model": 5,
+      "github_create_issue": 5,
+      "slack_post": 5,
+      "ssh_exec": 5
+    }
+  },
+  "root_cause_diversity": {
+    "unique_root_cause_patterns": 52,
+    "root_cause_entropy": 4.9245,
+    "repeated_patterns": 11,
+    "top_root_cause_patterns": {
+      "Flawed plan structure: the ordering/strategy was": 14,
+      "Workflow terminated early: the agent treated": 13,
+      "Tool selected by surface-level name matching": 12,
+      "Unverified intermediate result: an intermediate call": 4,
+      "Insufficient context gathering: the agent did": 3,
+      "Insufficient context gathering: the agent skipped": 3,
+      "Right tool, wrong value: shopify_api was": 2,
+      "Fabricated content: the agent invented a": 2,
+      "Faulty recovery: in response to duplicate": 2,
+      "Right tool, wrong value: checkpoint_save was": 2,
+      "State/context loss: the agent overwrote a": 2,
+      "A required argument was missing: sentiment_classify": 1,
+      "Faulty recovery: in response to CVE-2024-3094": 1,
+      "Right tool, wrong value: refund_issue was": 1,
+      "A required argument was missing: open_url": 1
+    }
+  },
+  "quality_score": {
+    "schema_score": 100.0,
+    "exact_dup_score": 100.0,
+    "near_dup_score": 100.0,
+    "category_balance_score": 40.0,
+    "severity_score": 87.5,
+    "difficulty_score": 86.66666666666667,
+    "tool_diversity_score": 100,
+    "root_cause_diversity_score": 98.5,
+    "recovery_diversity_score": 87.6,
+    "diversity_score": 95.4,
+    "composite_quality_score": 87.5
+  }
+}

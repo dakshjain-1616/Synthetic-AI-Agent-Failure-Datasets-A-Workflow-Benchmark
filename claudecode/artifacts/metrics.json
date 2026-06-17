@@ -1,0 +1,322 @@
+{
+  "total": 1000,
+  "by_category": {
+    "Wrong Tool Selection": 100,
+    "Incorrect Parameters": 100,
+    "Missing Parameters": 100,
+    "Incomplete Workflow": 100,
+    "Incorrect Planning": 100,
+    "Hallucinated Information": 100,
+    "Insufficient Research": 100,
+    "Context Loss": 100,
+    "Multi-Step Execution Failure": 100,
+    "Recovery Failure": 100
+  },
+  "by_severity": {
+    "Low": 200,
+    "Medium": 500,
+    "High": 250,
+    "Critical": 50
+  },
+  "by_difficulty": {
+    "Easy": 300,
+    "Medium": 500,
+    "Hard": 200
+  },
+  "severity_pct": {
+    "Low": 20.0,
+    "Medium": 50.0,
+    "High": 25.0,
+    "Critical": 5.0
+  },
+  "difficulty_pct": {
+    "Easy": 30.0,
+    "Medium": 50.0,
+    "Hard": 20.0
+  },
+  "sev_by_cat": {
+    "Wrong Tool Selection": {
+      "Low": 20,
+      "Medium": 50,
+      "High": 25,
+      "Critical": 5
+    },
+    "Incorrect Parameters": {
+      "Low": 20,
+      "Medium": 50,
+      "High": 25,
+      "Critical": 5
+    },
+    "Missing Parameters": {
+      "Low": 20,
+      "Medium": 50,
+      "High": 25,
+      "Critical": 5
+    },
+    "Incomplete Workflow": {
+      "Low": 20,
+      "Medium": 50,
+      "High": 25,
+      "Critical": 5
+    },
+    "Incorrect Planning": {
+      "Low": 20,
+      "Medium": 50,
+      "High": 25,
+      "Critical": 5
+    },
+    "Hallucinated Information": {
+      "Low": 20,
+      "Medium": 50,
+      "High": 25,
+      "Critical": 5
+    },
+    "Insufficient Research": {
+      "Low": 20,
+      "Medium": 50,
+      "High": 25,
+      "Critical": 5
+    },
+    "Context Loss": {
+      "Low": 20,
+      "Medium": 50,
+      "High": 25,
+      "Critical": 5
+    },
+    "Multi-Step Execution Failure": {
+      "Low": 20,
+      "Medium": 50,
+      "High": 25,
+      "Critical": 5
+    },
+    "Recovery Failure": {
+      "Low": 20,
+      "Medium": 50,
+      "High": 25,
+      "Critical": 5
+    }
+  },
+  "diff_by_cat": {
+    "Wrong Tool Selection": {
+      "Easy": 30,
+      "Medium": 50,
+      "Hard": 20
+    },
+    "Incorrect Parameters": {
+      "Easy": 30,
+      "Medium": 50,
+      "Hard": 20
+    },
+    "Missing Parameters": {
+      "Easy": 30,
+      "Medium": 50,
+      "Hard": 20
+    },
+    "Incomplete Workflow": {
+      "Easy": 30,
+      "Medium": 50,
+      "Hard": 20
+    },
+    "Incorrect Planning": {
+      "Easy": 30,
+      "Medium": 50,
+      "Hard": 20
+    },
+    "Hallucinated Information": {
+      "Easy": 30,
+      "Medium": 50,
+      "Hard": 20
+    },
+    "Insufficient Research": {
+      "Easy": 30,
+      "Medium": 50,
+      "Hard": 20
+    },
+    "Context Loss": {
+      "Easy": 30,
+      "Medium": 50,
+      "Hard": 20
+    },
+    "Multi-Step Execution Failure": {
+      "Easy": 30,
+      "Medium": 50,
+      "Hard": 20
+    },
+    "Recovery Failure": {
+      "Easy": 30,
+      "Medium": 50,
+      "Hard": 20
+    }
+  },
+  "unique_failure_types": 1000,
+  "unique_tools": 1133,
+  "total_tool_mentions": 3256,
+  "avg_tools_per_record": 3.26,
+  "tool_domain_distribution": {
+    "other": 1194,
+    "comms/crm": 357,
+    "data/sql": 353,
+    "git/github": 238,
+    "mcp": 224,
+    "web/research": 194,
+    "cloud/iac": 152,
+    "kubernetes": 133,
+    "rag/vector": 133,
+    "payments": 84,
+    "ci/cd": 67,
+    "observability": 64,
+    "ml": 36,
+    "security": 27
+  },
+  "top_tools": [
+    [
+      "Read",
+      184
+    ],
+    [
+      "Bash",
+      99
+    ],
+    [
+      "Edit",
+      76
+    ],
+    [
+      "psql",
+      57
+    ],
+    [
+      "ripgrep",
+      46
+    ],
+    [
+      "curl",
+      44
+    ],
+    [
+      "web_search",
+      44
+    ],
+    [
+      "bigquery.jobs.query",
+      34
+    ],
+    [
+      "gdrive.files.list",
+      30
+    ],
+    [
+      "Grep",
+      29
+    ],
+    [
+      "gdrive.files.get",
+      28
+    ],
+    [
+      "pytest",
+      28
+    ],
+    [
+      "terraform plan",
+      27
+    ],
+    [
+      "WebFetch",
+      24
+    ],
+    [
+      "terraform apply",
+      21
+    ],
+    [
+      "grep",
+      20
+    ],
+    [
+      "dbt run",
+      19
+    ],
+    [
+      "embeddings.create",
+      19
+    ],
+    [
+      "gmail.messages.list",
+      18
+    ],
+    [
+      "fastlane",
+      18
+    ]
+  ],
+  "unique_root_causes": 1000,
+  "unique_user_requests": 1000,
+  "avg_recovery_steps": 4.93,
+  "recovery_step_len_min_max": [
+    4,
+    6
+  ],
+  "unique_recovery_steps": 4916,
+  "total_recovery_steps": 4928,
+  "most_common_recovery_steps": [
+    [
+      "run nginx t and reload",
+      3
+    ],
+    [
+      "cancel the blocking statement if still running",
+      2
+    ],
+    [
+      "re run ci to confirm green",
+      2
+    ],
+    [
+      "confirm pods reach ready",
+      2
+    ],
+    [
+      "kill the diverging run",
+      2
+    ]
+  ],
+  "avg_eval_criteria": 2.96,
+  "unique_eval_criteria": 2954,
+  "crit_high_by_cat": {
+    "Wrong Tool Selection": 30,
+    "Incorrect Parameters": 30,
+    "Missing Parameters": 30,
+    "Incomplete Workflow": 30,
+    "Incorrect Planning": 30,
+    "Hallucinated Information": 30,
+    "Insufficient Research": 30,
+    "Context Loss": 30,
+    "Multi-Step Execution Failure": 30,
+    "Recovery Failure": 30
+  },
+  "severity_score_by_cat": {
+    "Wrong Tool Selection": 2.15,
+    "Incorrect Parameters": 2.15,
+    "Missing Parameters": 2.15,
+    "Incomplete Workflow": 2.15,
+    "Incorrect Planning": 2.15,
+    "Hallucinated Information": 2.15,
+    "Insufficient Research": 2.15,
+    "Context Loss": 2.15,
+    "Multi-Step Execution Failure": 2.15,
+    "Recovery Failure": 2.15
+  },
+  "tool_related_count": 300,
+  "plan_related_count": 300,
+  "nn_similarity": {
+    "mean": 0.026,
+    "max": 0.157,
+    "p50": 0.022,
+    "p90": 0.044,
+    "p99": 0.086
+  },
+  "pairs_over_0.4": 0,
+  "top_similar_pairs": [],
+  "exact_duplicates": 0
+}

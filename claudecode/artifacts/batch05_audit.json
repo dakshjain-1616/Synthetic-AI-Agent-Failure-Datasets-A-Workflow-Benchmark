@@ -1,0 +1,111 @@
+{
+  "total": 100,
+  "by_category": {
+    "Incorrect Planning": 100
+  },
+  "by_severity": {
+    "Medium": 50,
+    "Low": 20,
+    "High": 25,
+    "Critical": 5
+  },
+  "by_difficulty": {
+    "Medium": 50,
+    "Easy": 30,
+    "Hard": 20
+  },
+  "severity_pct": {
+    "Medium": 50.0,
+    "Low": 20.0,
+    "High": 25.0,
+    "Critical": 5.0
+  },
+  "difficulty_pct": {
+    "Medium": 50.0,
+    "Easy": 30.0,
+    "Hard": 20.0
+  },
+  "unique_failure_types": 100,
+  "unique_tools": 213,
+  "top_tools": [
+    [
+      "Read",
+      16
+    ],
+    [
+      "Bash",
+      13
+    ],
+    [
+      "pytest",
+      9
+    ],
+    [
+      "psql",
+      9
+    ],
+    [
+      "Edit",
+      8
+    ],
+    [
+      "gdrive.files.list",
+      7
+    ],
+    [
+      "curl",
+      6
+    ],
+    [
+      "browser.navigate",
+      5
+    ],
+    [
+      "browser.extract_text",
+      5
+    ],
+    [
+      "gdrive.files.get",
+      5
+    ],
+    [
+      "terraform apply",
+      4
+    ],
+    [
+      "dbt run",
+      4
+    ],
+    [
+      "kubectl",
+      4
+    ],
+    [
+      "bigquery.jobs.query",
+      4
+    ],
+    [
+      "snowflake.query",
+      4
+    ]
+  ],
+  "unique_root_cause_prefixes": 100,
+  "unique_user_requests": 100,
+  "unique_recovery_steps": 500,
+  "avg_recovery_steps": 5.0,
+  "most_repeated_recovery_step": [
+    [
+      "run aws ecs describe services to confirm the service has 1 task",
+      1
+    ],
+    [
+      "replace in process dict with a redis backed counter keyed by user window",
+      1
+    ],
+    [
+      "provision point at the staging elasticache endpoint via config",
+      1
+    ]
+  ],
+  "unique_eval_criteria": 299
+}
