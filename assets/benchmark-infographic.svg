@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" font-family="'Segoe UI', Helvetica, Arial, sans-serif" role="img" aria-label="Synthetic AI agent failure dataset and workflow benchmark overview">
+  <defs>
+    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#4f46e5"/>
+      <stop offset="0.5" stop-color="#7c3aed"/>
+      <stop offset="1" stop-color="#0ea5e9"/>
+    </linearGradient>
+    <linearGradient id="ftr" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0ea5e9"/>
+      <stop offset="1" stop-color="#4f46e5"/>
+    </linearGradient>
+    <filter id="sh" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="720" fill="#f8fafc"/>
+
+  <!-- Header -->
+  <rect width="1200" height="92" fill="url(#hdr)"/>
+  <text x="40" y="44" fill="#ffffff" font-size="30" font-weight="700">Synthetic AI Agent Failure Datasets</text>
+  <text x="40" y="74" fill="#e0e7ff" font-size="17">A workflow benchmark · Claude Code (System A) vs Claude Code + NEO MCP (System B)</text>
+
+  <!-- Stat cards -->
+  <g filter="url(#sh)">
+    <rect x="40"  y="116" width="262" height="104" rx="12" fill="#ffffff"/>
+    <rect x="324" y="116" width="262" height="104" rx="12" fill="#ffffff"/>
+    <rect x="614" y="116" width="262" height="104" rx="12" fill="#ffffff"/>
+    <rect x="898" y="116" width="262" height="104" rx="12" fill="#ffffff"/>
+  </g>
+  <rect x="40"  y="116" width="8" height="104" rx="4" fill="#4f46e5"/>
+  <rect x="324" y="116" width="8" height="104" rx="4" fill="#14b8a6"/>
+  <rect x="614" y="116" width="8" height="104" rx="4" fill="#f59e0b"/>
+  <rect x="898" y="116" width="8" height="104" rx="4" fill="#f43f5e"/>
+  <text x="72"  y="170" fill="#0f172a" font-size="38" font-weight="800">2,000</text>
+  <text x="72"  y="198" fill="#64748b" font-size="15">records (1,000 per system)</text>
+  <text x="356" y="170" fill="#0f172a" font-size="38" font-weight="800">10</text>
+  <text x="356" y="198" fill="#64748b" font-size="15">failure categories · 100 each</text>
+  <text x="646" y="170" fill="#0f172a" font-size="38" font-weight="800">15</text>
+  <text x="646" y="198" fill="#64748b" font-size="15">field JSONL schema</text>
+  <text x="930" y="170" fill="#0f172a" font-size="38" font-weight="800">100%</text>
+  <text x="930" y="198" fill="#64748b" font-size="15">schema-valid · balanced</text>
+
+  <!-- Severity distribution -->
+  <text x="40" y="270" fill="#0f172a" font-size="18" font-weight="700">Severity distribution</text>
+  <g>
+    <rect x="60"  y="284" width="216" height="34" fill="#38bdf8"/>
+    <rect x="276" y="284" width="540" height="34" fill="#4f46e5"/>
+    <rect x="816" y="284" width="270" height="34" fill="#f59e0b"/>
+    <rect x="1086" y="284" width="54" height="34" fill="#f43f5e"/>
+    <text x="168"  y="306" fill="#ffffff" font-size="14" font-weight="700" text-anchor="middle">Low 20%</text>
+    <text x="546"  y="306" fill="#ffffff" font-size="14" font-weight="700" text-anchor="middle">Medium 50%</text>
+    <text x="951"  y="306" fill="#ffffff" font-size="14" font-weight="700" text-anchor="middle">High 25%</text>
+    <text x="1113" y="306" fill="#ffffff" font-size="12" font-weight="700" text-anchor="middle">5%</text>
+  </g>
+
+  <!-- Difficulty distribution -->
+  <text x="40" y="368" fill="#0f172a" font-size="18" font-weight="700">Difficulty distribution</text>
+  <g>
+    <rect x="60"  y="382" width="324" height="34" fill="#14b8a6"/>
+    <rect x="384" y="382" width="540" height="34" fill="#7c3aed"/>
+    <rect x="924" y="382" width="216" height="34" fill="#f59e0b"/>
+    <text x="222" y="404" fill="#ffffff" font-size="14" font-weight="700" text-anchor="middle">Easy 30%</text>
+    <text x="654" y="404" fill="#ffffff" font-size="14" font-weight="700" text-anchor="middle">Medium 50%</text>
+    <text x="1032" y="404" fill="#ffffff" font-size="14" font-weight="700" text-anchor="middle">Hard 20%</text>
+  </g>
+
+  <!-- Categories ribbon -->
+  <text x="40" y="466" fill="#0f172a" font-size="18" font-weight="700">10 failure categories</text>
+  <g font-size="13" font-weight="600">
+    <rect x="60"  y="480" width="168" height="30" rx="15" fill="#eef2ff"/><text x="144" y="500" fill="#4338ca" text-anchor="middle">Wrong Tool</text>
+    <rect x="236" y="480" width="190" height="30" rx="15" fill="#eef2ff"/><text x="331" y="500" fill="#4338ca" text-anchor="middle">Incorrect Params</text>
+    <rect x="434" y="480" width="180" height="30" rx="15" fill="#eef2ff"/><text x="524" y="500" fill="#4338ca" text-anchor="middle">Missing Params</text>
+    <rect x="622" y="480" width="196" height="30" rx="15" fill="#eef2ff"/><text x="720" y="500" fill="#4338ca" text-anchor="middle">Incomplete Workflow</text>
+    <rect x="826" y="480" width="170" height="30" rx="15" fill="#eef2ff"/><text x="911" y="500" fill="#4338ca" text-anchor="middle">Bad Planning</text>
+    <rect x="1004" y="480" width="156" height="30" rx="15" fill="#eef2ff"/><text x="1082" y="500" fill="#4338ca" text-anchor="middle">Hallucination</text>
+    <rect x="60"  y="518" width="196" height="30" rx="15" fill="#f0fdfa"/><text x="158" y="538" fill="#0f766e" text-anchor="middle">Insufficient Research</text>
+    <rect x="264" y="518" width="150" height="30" rx="15" fill="#f0fdfa"/><text x="339" y="538" fill="#0f766e" text-anchor="middle">Context Loss</text>
+    <rect x="422" y="518" width="210" height="30" rx="15" fill="#f0fdfa"/><text x="527" y="538" fill="#0f766e" text-anchor="middle">Multi-Step Failure</text>
+    <rect x="640" y="518" width="176" height="30" rx="15" fill="#f0fdfa"/><text x="728" y="538" fill="#0f766e" text-anchor="middle">Recovery Failure</text>
+  </g>
+
+  <!-- Benchmark comparison -->
+  <text x="40" y="592" fill="#0f172a" font-size="18" font-weight="700">Independent evaluation &amp; key metrics</text>
+  <!-- overall score bars (scale: 10 = 520px from x=270) -->
+  <text x="40"  y="624" fill="#334155" font-size="14" font-weight="600">System A</text>
+  <rect x="270" y="610" width="520" height="20" rx="10" fill="#e2e8f0"/>
+  <rect x="270" y="610" width="432" height="20" rx="10" fill="#14b8a6"/>
+  <text x="712" y="625" fill="#0f766e" font-size="14" font-weight="700">8.3 / 10</text>
+  <text x="40"  y="654" fill="#334155" font-size="14" font-weight="600">System B</text>
+  <rect x="270" y="640" width="520" height="20" rx="10" fill="#e2e8f0"/>
+  <rect x="270" y="640" width="380" height="20" rx="10" fill="#4f46e5"/>
+  <text x="660" y="655" fill="#4338ca" font-size="14" font-weight="700">7.3 / 10</text>
+  <!-- metric chips -->
+  <g font-size="13">
+    <rect x="824" y="606" width="336" height="26" rx="13" fill="#ffffff" filter="url(#sh)"/>
+    <text x="840" y="623" fill="#475569"><tspan font-weight="700" fill="#0f172a">Near-dup</tspan>  A 0.00%  ·  B 1.60%</text>
+    <rect x="824" y="638" width="336" height="26" rx="13" fill="#ffffff" filter="url(#sh)"/>
+    <text x="840" y="655" fill="#475569"><tspan font-weight="700" fill="#0f172a">Unique tools</tspan>  A 1133  ·  B 110   |   Repro  A ✗  B ✓</text>
+  </g>
+
+  <!-- Footer -->
+  <rect x="0" y="682" width="1200" height="38" fill="url(#ftr)"/>
+  <text x="40"  y="706" fill="#ffffff" font-size="14" font-weight="600">Deterministic generation · generation-time near-duplicate guard · full audit trail</text>
+  <text x="1160" y="706" fill="#e0e7ff" font-size="14" font-weight="700" text-anchor="end">Powered by NEO MCP · docs.heyneo.com/neo-mcp</text>
+</svg>

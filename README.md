@@ -1,8 +1,8 @@
 # Synthetic AI Agent Failure Datasets — A Workflow Benchmark
 
-[![NEO for VS Code](https://img.shields.io/badge/VS%20Code-Get%20NEO-007ACC?logo=visualstudiocode&logoColor=white)](https://marketplace.visualstudio.com/items?itemName=NeoResearchInc.heyneo)
-[![NEO for Cursor](https://img.shields.io/badge/Cursor-Get%20NEO-000000?logo=cursor&logoColor=white)](https://marketplace.cursorapi.com/items/?itemName=NeoResearchInc.heyneo)
-[![NEO MCP Docs](https://img.shields.io/badge/docs-NEO%20MCP-2ea44f?logo=readthedocs&logoColor=white)](https://docs.heyneo.com/neo-mcp)
+[![NEO for VS Code](https://img.shields.io/badge/VS%20Code-NEO-007ACC)](https://marketplace.visualstudio.com/items?itemName=NeoResearchInc.heyneo)
+[![NEO for Cursor](https://img.shields.io/badge/Cursor-NEO-000000)](https://marketplace.cursorapi.com/items/?itemName=NeoResearchInc.heyneo)
+[![NEO MCP Docs](https://img.shields.io/badge/Docs-NEO%20MCP-2ea44f)](https://docs.heyneo.com/neo-mcp)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 Two independently generated **1,000-record synthetic datasets of realistic AI agent
@@ -22,6 +22,8 @@ generation quality vs. dataset engineering quality**.
 > failure-detection and recovery research, tool-calling benchmarks, and MCP-workflow
 > evaluation. For high-stakes benchmark construction, consider combining both (dedup
 > across them first) — see the recommendation in [`evaluation_report.md`](evaluation_report.md).
+
+![Dataset composition and workflow-benchmark overview: 2,000 records across 10 failure categories, severity and difficulty distributions, and the System A vs System B evaluation](assets/benchmark-infographic.svg)
 
 ---
 
@@ -67,9 +69,9 @@ generation-and-audit layer on top of your AI coding assistant. Get it for your e
 
 | | Install | |
 |---|---|---|
-| **VS Code** | [![NEO for VS Code](https://img.shields.io/badge/Marketplace-Install%20NEO-007ACC?logo=visualstudiocode&logoColor=white)](https://marketplace.visualstudio.com/items?itemName=NeoResearchInc.heyneo) | [marketplace.visualstudio.com](https://marketplace.visualstudio.com/items?itemName=NeoResearchInc.heyneo) |
-| **Cursor** | [![NEO for Cursor](https://img.shields.io/badge/Marketplace-Install%20NEO-000000?logo=cursor&logoColor=white)](https://marketplace.cursorapi.com/items/?itemName=NeoResearchInc.heyneo) | [marketplace.cursorapi.com](https://marketplace.cursorapi.com/items/?itemName=NeoResearchInc.heyneo) |
-| **Docs** | [![NEO MCP Docs](https://img.shields.io/badge/Read-NEO%20MCP%20Docs-2ea44f?logo=readthedocs&logoColor=white)](https://docs.heyneo.com/neo-mcp) | [docs.heyneo.com/neo-mcp](https://docs.heyneo.com/neo-mcp) |
+| **VS Code** | [![NEO for VS Code](https://img.shields.io/badge/VS%20Code-Install%20NEO-007ACC)](https://marketplace.visualstudio.com/items?itemName=NeoResearchInc.heyneo) | [marketplace.visualstudio.com](https://marketplace.visualstudio.com/items?itemName=NeoResearchInc.heyneo) |
+| **Cursor** | [![NEO for Cursor](https://img.shields.io/badge/Cursor-Install%20NEO-000000)](https://marketplace.cursorapi.com/items/?itemName=NeoResearchInc.heyneo) | [marketplace.cursorapi.com](https://marketplace.cursorapi.com/items/?itemName=NeoResearchInc.heyneo) |
+| **Docs** | [![NEO MCP Docs](https://img.shields.io/badge/Docs-NEO%20MCP-2ea44f)](https://docs.heyneo.com/neo-mcp) | [docs.heyneo.com/neo-mcp](https://docs.heyneo.com/neo-mcp) |
 
 ---
 
